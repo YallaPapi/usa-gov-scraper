@@ -1,0 +1,2 @@
+2025-08-25 11:45:42,506 - usa_gov_scraper - INFO - Logging initialized. Log file: logs/scraper_20250825_114542.log
+2025-08-25 11:45:42,506 - usa_gov_scraper - INFO - DRY RUN MODE - No actual scraping will be performed

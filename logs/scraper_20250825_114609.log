@@ -1,0 +1,29 @@
+2025-08-25 11:46:09,003 - usa_gov_scraper - INFO - Logging initialized. Log file: logs/scraper_20250825_114609.log
+2025-08-25 11:46:09,004 - usa_gov_scraper - INFO - Starting simple Botasaurus scrape (no orchestration)
+2025-08-25 11:46:09,004 - usa_gov_scraper - INFO - Scraping section: A
+2025-08-25 11:46:09,017 - usa_gov_scraper - ERROR - Unexpected error: Object of type AgencyIndexScraper is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\Stuart\Desktop\Projects\botasaurus\usa_gov_scraper\main.py", line 129, in run_simple_scrape
+    result = scraper.scrape_section(args.section)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stuart\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\botasaurus\request_decorator.py", line 198, in wrapper_requests
+    current_result = run_task(data_item, 0)
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stuart\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\botasaurus\request_decorator.py", line 85, in run_task
+    path = _get_cache_path(func, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Stuart\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\botasaurus\cache.py", line 39, in _get_cache_path
+    serialized_data = json.dumps(data).encode('utf-8')
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type AgencyIndexScraper is not JSON serializable

@@ -1,0 +1,984 @@
+category,domain,url,text,page_type,found_on
+Congress/Legislative,www.congress.gov,https://www.congress.gov/state-legislature-websites,state and territorial legislators,Elected Officials,https://www.usa.gov/elected-officials
+Congress/Legislative,www.congress.gov,https://www.congress.gov/members,Congress,Government Branches,https://www.usa.gov/branches-of-government
+Congress/Legislative,www.house.gov,https://www.house.gov/representatives,U.S. representatives,Elected Officials,https://www.usa.gov/elected-officials
+Congress/Legislative,www.senate.gov,https://www.senate.gov/senators/senators-contact.htm,U.S. senators,Elected Officials,https://www.usa.gov/elected-officials
+Congress/Legislative,www.whitehouse.gov,https://www.whitehouse.gov/contact/,contact the president of the United States,Elected Officials,https://www.usa.gov/elected-officials
+Elected Officials,ce.naco.org,https://ce.naco.org/,county executive,Elected Officials,https://www.usa.gov/elected-officials
+Elected Officials,www.usmayors.org,https://www.usmayors.org/mayors/,Search for a mayor,Elected Officials,https://www.usa.gov/elected-officials
+Federal Agency,acl.gov,https://acl.gov/,Administration for Community Living,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,acl.gov,https://acl.gov/contact,Contact the Administration for Community Living,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,ag.nv.gov,https://ag.nv.gov/,Nevada (NV),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ag.nv.gov,https://ag.nv.gov/About/Consumer_Protection/Bureau_of_Consumer_Protection/,Bureau of Consumer Protection,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,ag.ny.gov,https://ag.ny.gov/,New York (NY),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ag.ok.gov,https://ag.ok.gov/,"Department of Agriculture, Food and Forestry",Oklahoma Government,https://www.usa.gov/states/oklahoma
+Federal Agency,ag.wyo.gov,https://ag.wyo.gov/,Wyoming (WY),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ag.wyo.gov,https://ag.wyo.gov/law-office-division/consumer-protection-and-antitrust-unit,Consumer Protection and Antitrust Unit,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,ago.mo.gov,https://ago.mo.gov/,Missouri (MO),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ago.mo.gov,https://ago.mo.gov/civil-division/consumer,Consumer Protection Section,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,ago.wv.gov,https://ago.wv.gov/Pages/default.aspx,West Virginia (WV),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ago.wv.gov,https://ago.wv.gov/consumerprotection/pages/default.aspx,Consumer Protection,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,agr.mt.gov,https://agr.mt.gov/,Department of Agriculture,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,agr.wa.gov,https://agr.wa.gov/,Department of Agriculture,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,agri.nv.gov,https://agri.nv.gov/,Department of Agriculture,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,agriculture.az.gov,https://agriculture.az.gov/,Department of Agriculture,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,agriculture.mo.gov,https://agriculture.mo.gov/,Department of Agriculture,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,agriculture.ny.gov,https://agriculture.ny.gov/,Department of Agriculture & Markets,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,agriculture.sc.gov,https://agriculture.sc.gov/,Department of Agriculture,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,agriculture.wv.gov,https://agriculture.wv.gov/,Department of Agriculture,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,agriculture.wy.gov,https://agriculture.wy.gov/,Department of Agriculture,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,americorps.gov,https://americorps.gov/,AmeriCorps,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,americorps.gov,https://americorps.gov/contact,Contact AmeriCorps,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,americorps.gov,https://americorps.gov/contact/region-offices,Find an AmeriCorps office in your region,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,americorps.gov,https://americorps.gov/serve/americorps-seniors,AmeriCorps Seniors,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,atg.sd.gov,https://atg.sd.gov/,South Dakota (SD),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,attorneygeneral.nd.gov,https://attorneygeneral.nd.gov/,North Dakota (ND),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,attorneygeneral.nd.gov,https://attorneygeneral.nd.gov/consumer-resources/,Consumer Protection,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,az.gov,https://az.gov/,Arizona,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,azdot.gov,https://azdot.gov/mvd,Motor Vehicles,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,azgovernor.gov,https://azgovernor.gov/governor/meet-governor-katie-hobbs,Arizona (AZ),State Governors,https://www.usa.gov/state-governor
+Federal Agency,azsos.gov,https://azsos.gov/elections,Elections,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,bensguide.gpo.gov,https://bensguide.gpo.gov/j-check-balance,the system of checks and balances,Government Branches,https://www.usa.gov/branches-of-government
+Federal Agency,coag.gov,https://coag.gov/,Colorado (CO),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,coag.gov,https://coag.gov/office-sections/consumer-protection/,Consumer Protection,Colorado Government,https://www.usa.gov/states/colorado
+Federal Agency,consumer.sc.gov,https://consumer.sc.gov/,Department of Consumer Affairs,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,consumer.sd.gov,https://consumer.sd.gov/,Consumer Protection,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,cor.mt.gov,https://cor.mt.gov/,Department of Corrections,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,corrections.az.gov,https://corrections.az.gov/,Department of Corrections,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,corrections.ky.gov,https://corrections.ky.gov/Pages/index.aspx,Department of Corrections,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,corrections.wyo.gov,https://corrections.wyo.gov/,Department of Corrections,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,dait.wi.gov,https://dait.wi.gov/Pages/da-offices.aspx,District Attorney Office Addresses by County,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,danr.sd.gov,https://danr.sd.gov/,Department of Agriculture and Natural Resources,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,datcp.wi.gov,https://datcp.wi.gov/Pages/Homepage.aspx,"Department of Agriculture, Trade and Consumer Protection",Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,datcp.wi.gov,https://datcp.wi.gov/Pages/Programs_Services/ConsumerProtection.aspx,Consumer Protection,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,dcr.wv.gov,https://dcr.wv.gov/Pages/default.aspx,Division of Corrections and Rehabilitation,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,dem.nv.gov,https://dem.nv.gov/,Division of Emergency Management,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,dem.ri.gov,https://dem.ri.gov/natural-resources-bureau/agriculture-and-forest-environment,Division of Agriculture and Forest Environment,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,dema.az.gov,https://dema.az.gov/emergency-management,Division of Emergency Management,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,des.az.gov,https://des.az.gov/,Arizona Department of Economic Security,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,des.mt.gov,https://des.mt.gov/,Disaster and Emergency Services,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,dese.mo.gov,https://dese.mo.gov/,Department of Elementary & Secondary Education,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,dfs.wyo.gov,https://dfs.wyo.gov/,Department of Family Services,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,dhhr.wv.gov,https://dhhr.wv.gov/POS/Pages/AllProgams.aspx,Social Services,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,dhhr.wv.gov,https://dhhr.wv.gov/Pages/default.aspx,Department of Health and Human Resources,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,dhhs.ne.gov,https://dhhs.ne.gov/Pages/Children-and-Family-Services.aspx,Children and Family Services,Nebraska Government,https://www.usa.gov/states/nebraska
+Federal Agency,dhhs.ne.gov,https://dhhs.ne.gov/Pages/public-health.aspx,Public Health,Nebraska Government,https://www.usa.gov/states/nebraska
+Federal Agency,dhs.ri.gov,https://dhs.ri.gov/,Department of Human Services,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,dmv.nv.gov,https://dmv.nv.gov/,Motor Vehicles,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,dmv.ny.gov,https://dmv.ny.gov/,Motor Vehicles,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,doc.mo.gov,https://doc.mo.gov/,Department of Corrections,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,doc.nv.gov,https://doc.nv.gov/,Department of Corrections,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,doc.ri.gov,https://doc.ri.gov/,Department of Corrections,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,doc.sd.gov,https://doc.sd.gov/,Department of Corrections,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,doc.wi.gov,https://doc.wi.gov/Pages/Home.aspx,Department of Corrections,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,doccs.ny.gov,https://doccs.ny.gov/,Department of Corrections and Community Supervision,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,doe.nv.gov,https://doe.nv.gov/,Department of Education,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,doe.sd.gov,https://doe.sd.gov/,Department of Education,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,doh.sd.gov,https://doh.sd.gov/,Department of Health,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,doh.wa.gov,https://doh.wa.gov/,Department of Health,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,dojmt.gov,https://dojmt.gov/attorney-generals-office/,Montana (MT),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,dojmt.gov,https://dojmt.gov/office-of-consumer-protection/,Office of Consumer Protection,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,dor.mo.gov,https://dor.mo.gov/motor-vehicle/,Motor Vehicles,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,dor.sd.gov,https://dor.sd.gov/individuals/motor-vehicle/,Motor Vehicles,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,dos.ny.gov,https://dos.ny.gov/consumer-protection,Consumer Protection,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,dpbh.nv.gov,https://dpbh.nv.gov/,Public and Behavioral Health,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,dph.sc.gov,https://dph.sc.gov/,Department of Public Health,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,dphhs.mt.gov,https://dphhs.mt.gov/familysupports,Child and Family Services,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,dphhs.mt.gov,https://dphhs.mt.gov/publichealthinthe406,Public Health,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,dpi.wi.gov,https://dpi.wi.gov/,Department of Public Instruction,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,dps.sd.gov,https://dps.sd.gov/emergency-services/emergency-management,Emergency Management,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,drive.ky.gov,https://drive.ky.gov/Pages/index.aspx,Motor Vehicles,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,dss.mo.gov,https://dss.mo.gov/,Department of Social Services,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,dss.sc.gov,https://dss.sc.gov/,Department of Social Services,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,dss.sd.gov,https://dss.sd.gov/,Department of Social Services,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,dwss.nv.gov,https://dwss.nv.gov/,Welfare and Supportive Services,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,eclkc.ohs.acf.hhs.gov,https://eclkc.ohs.acf.hhs.gov/center-locator,Find a Head Start center near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,ed.sc.gov,https://ed.sc.gov/,Department of Education,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,education.ky.gov,https://education.ky.gov/Pages/default.aspx,Department of Education,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,education.mn.gov,https://education.mn.gov/MDE/index.htm,Department of Education,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,elect.ky.gov,https://elect.ky.gov/Pages/default.aspx,State Board of Elections,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,emd.wv.gov,https://emd.wv.gov/Pages/default.aspx,Emergency Management,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,evers.wi.gov,https://evers.wi.gov/pages/home.aspx,Wisconsin (WI),State Governors,https://www.usa.gov/state-governor
+Federal Agency,evers.wi.gov,https://evers.wi.gov/Pages/connect.aspx,Contact Governor Evers,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,gohsep.la.gov,https://gohsep.la.gov/,Office of Homeland Security & Emergency Preparedness,Louisiana Government,https://www.usa.gov/states/louisiana
+Federal Agency,gov.nv.gov,https://gov.nv.gov/,Nevada (NV),State Governors,https://www.usa.gov/state-governor
+Federal Agency,gov.nv.gov,https://gov.nv.gov/Contact/Contact/,Contact Governor Lombardo,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,governor.cnmi.gov,https://governor.cnmi.gov/,Northern Mariana Islands (MP),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.guam.gov,https://governor.guam.gov/contact-us/,Guam (GU),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.ky.gov,https://governor.ky.gov/,Kentucky (KY),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.ky.gov,https://governor.ky.gov/contact/contact-us,Contact Governor Beshear,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,governor.mo.gov,https://governor.mo.gov/,Missouri (MO),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.mo.gov,https://governor.mo.gov/contact-us,Contact Governor Kehoe,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,governor.mt.gov,https://governor.mt.gov/,Montana (MT),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.mt.gov,https://governor.mt.gov/Contact/,Contact Governor Gianforte,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,governor.nc.gov,https://governor.nc.gov/,North Carolina (NC),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.nc.gov,https://governor.nc.gov/contact/contact-governor-stein,Contact Governor Stein,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,governor.ri.gov,https://governor.ri.gov/,Rhode Island (RI),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.ri.gov,https://governor.ri.gov/contact,Contact Governor McKee,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,governor.sc.gov,https://governor.sc.gov/,South Carolina (SC),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.sc.gov,https://governor.sc.gov/contact-governors-office,Contact Governor McMaster,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,governor.sd.gov,https://governor.sd.gov/,South Dakota (SD),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.sd.gov,https://governor.sd.gov/office/contact.aspx,Contact Governor Rhoden,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,governor.wa.gov,https://governor.wa.gov/,Washington (WA),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.wa.gov,https://governor.wa.gov/contacting-governor/contacting-governors-office,Contact Governor Ferguson,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,governor.wv.gov,https://governor.wv.gov/,West Virginia (WV),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.wyo.gov,https://governor.wyo.gov/,Wyoming (WY),State Governors,https://www.usa.gov/state-governor
+Federal Agency,governor.wyo.gov,https://governor.wyo.gov/contact/governor,Contact Governor Gordon,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,governorreeves.ms.gov,https://governorreeves.ms.gov/,Mississippi (MS),State Governors,https://www.usa.gov/state-governor
+Federal Agency,headstart.gov,https://headstart.gov/,Find your local child support office,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,health.mo.gov,https://health.mo.gov/index.php,Department of Health & Senior Services,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,health.wyo.gov,https://health.wyo.gov/,Department of Health,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,hls.wyo.gov,https://hls.wyo.gov/,Office of Homeland Security,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,kyem.ky.gov,https://kyem.ky.gov/Pages/default.aspx,Emergency Management,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,ldh.la.gov,https://ldh.la.gov/,Department of Health,Louisiana Government,https://www.usa.gov/states/louisiana
+Federal Agency,mayor.dc.gov,https://mayor.dc.gov/,District of Columbia (DC),State Governors,https://www.usa.gov/state-governor
+Federal Agency,mil.wa.gov,https://mil.wa.gov/emergency-management-division,Emergency Management Division,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,mn.gov,https://mn.gov/governor/,Minnesota (MN),State Governors,https://www.usa.gov/state-governor
+Federal Agency,mn.gov,https://mn.gov/portal/,Minnesota,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,mn.gov,https://mn.gov/governor/connect/contact-us/contact-form.jsp,Contact Governor Walz,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,mn.gov,https://mn.gov/portal/residents/social-services.jsp,Social Services,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,mn.gov,https://mn.gov/doc/,Department of Corrections,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,msdh.ms.gov,https://msdh.ms.gov/,State Department of Health,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,mt.gov,https://mt.gov/,Montana,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,mvdmt.gov,https://mvdmt.gov/,Motor Vehicles,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,myvote.wi.gov,https://myvote.wi.gov/en-us/,Elections and Voting,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,ncdoj.gov,https://ncdoj.gov/,North Carolina (NC),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,ncdoj.gov,https://ncdoj.gov/protecting-consumers/,Consumer Protection,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,nmdoj.gov,https://nmdoj.gov/,New Mexico (NM),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,nmdoj.gov,https://nmdoj.gov/about-the-office/consumer-affairs/#consumer-protection,Consumer Protection,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,nv.gov,https://nv.gov/,Nevada,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,oag.dc.gov,https://oag.dc.gov/,District of Columbia (DC),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,offices.sc.egov.usda.gov,https://offices.sc.egov.usda.gov/locator/app,Find a Department of Agriculture service center near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,onlineservices.dps.mn.gov,https://onlineservices.dps.mn.gov/EServices/_/,Motor Vehicles,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,opi.mt.gov,https://opi.mt.gov/,Office of Public Instruction,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,pai.wv.gov,https://pai.wv.gov/Pages/default.aspx,Prosecuting Attorneys Institute,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,portal.ct.gov,https://portal.ct.gov/governor,Connecticut (CT),State Governors,https://www.usa.gov/state-governor
+Federal Agency,portal.ct.gov,https://portal.ct.gov/ag,Connecticut (CT),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,portal.ct.gov,https://portal.ct.gov/,Connecticut,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/Office-of-the-Governor/Contact/Email-Governor-Lamont,Contact Governor Lamont,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/DOAG,Department of Agriculture,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/dsshome,Department of Social Services,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/dcp,Consumer Protection,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/doc,Department of Corrections,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/sde,Department of Education,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/sots/common-elements/v5-template---redesign/elections--voting--home-page,Elections and Voting,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/demhs,Division of Emergency Management and Homeland Security,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/dph,Department of Public Health,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ct.gov,https://portal.ct.gov/DMV?language=en_US,Motor Vehicles,Connecticut Government,https://www.usa.gov/states/connecticut
+Federal Agency,portal.ice.gov,https://portal.ice.gov/eoir,search for information on an immigration court hearing,Courts,https://www.usa.gov/courts
+Federal Agency,riag.ri.gov,https://riag.ri.gov/,Rhode Island (RI),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,riag.ri.gov,https://riag.ri.gov/consumerprotection,Consumer Protection,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,sc.gov,https://sc.gov/,South Carolina,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,sde.ok.gov,https://sde.ok.gov/,Department of Education,Oklahoma Government,https://www.usa.gov/states/oklahoma
+Federal Agency,sdsos.gov,https://sdsos.gov/elections-voting/default.aspx,Division of Elections,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,sema.dps.mo.gov,https://sema.dps.mo.gov/,State Emergency Management Agency,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,sos.ks.gov,https://sos.ks.gov/elections/elections.html,Elections,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,sos.tn.gov,https://sos.tn.gov/elections,Elections,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,sos.wv.gov,https://sos.wv.gov/elections/pages/default.aspx,Elections Division,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,sos.wyo.gov,https://sos.wyo.gov/Elections/Default.aspx,Election Center,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,sosmt.gov,https://sosmt.gov/elections/,Elections and Voter Services,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,transportation.wv.gov,https://transportation.wv.gov/dmv/Pages/default.aspx,Motor Vehicles,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/state-governments,,State & Tribal Governments,https://www.usa.gov/state-tribal-governments
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/elected-officials,,Elected Officials,https://www.usa.gov/elected-officials
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/branches-of-government,,Government Branches,https://www.usa.gov/branches-of-government
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/agency-index,,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/state-governor,,State Governors,https://www.usa.gov/state-governor
+Federal Agency,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/state-attorney-general,,State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,vip.sos.nd.gov,https://vip.sos.nd.gov/PortalList.aspx,Elections and Voting,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,wa.gov,https://wa.gov/,Washington,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,wem.wi.gov,https://wem.wi.gov/,Emergency Management,Wisconsin Government,https://www.usa.gov/states/wisconsin
+Federal Agency,www.abilityone.gov,https://www.abilityone.gov/,U.S. AbilityOne Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.abilityone.gov,https://www.abilityone.gov/contact_us/index.html,Contact the U.S. AbilityOne Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.abmc.gov,https://www.abmc.gov/,American Battle Monuments Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.abmc.gov,https://www.abmc.gov/contact-us,Contact the American Battle Monuments Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.abmc.gov,https://www.abmc.gov/cemeteries-memorials,Locate cemeteries and memorials,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.access-board.gov,https://www.access-board.gov/,U.S. Access Board,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.access-board.gov,https://www.access-board.gov/contact/,Contact the U.S. Access Board,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.acf.hhs.gov,https://www.acf.hhs.gov/,Administration for Children and Families,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.acf.hhs.gov,https://www.acf.hhs.gov/about/contact-us,Contact the Administration for Children and Families,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.acf.hhs.gov,https://www.acf.hhs.gov/ana,Administration for Native Americans,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.acf.hhs.gov,https://www.acf.hhs.gov/ana/contact-information/ana-contact-information,Contact the Administration for Native Americans,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.achp.gov,https://www.achp.gov/,Advisory Council on Historic Preservation,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.achp.gov,https://www.achp.gov/contact/feedback,Contact the Advisory Council on Historic Preservation,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.acus.gov,https://www.acus.gov/,Administrative Conference of the United States,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.afrh.gov,http://www.afrh.gov/,Armed Forces Retirement Home,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.afrh.gov,https://www.afrh.gov/contactus,Contact the Armed Forces Retirement Home,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ag.ks.gov,https://www.ag.ks.gov/,Kansas (KS),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.ag.ks.gov,https://www.ag.ks.gov/divisions/public-protection/consumer-protection,Consumer Protection,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.ag.ky.gov,https://www.ag.ky.gov/Pages/default.aspx,Kentucky (KY),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.ag.ky.gov,https://www.ag.ky.gov/about/Office-Divisions/OCP/Pages/default.aspx,Office of Consumer Protection,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,www.ag.ky.gov,https://www.ag.ky.gov/Pages/attorneys.aspx,Commonwealth's and County Attorneys,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,www.agriculture.ks.gov,https://www.agriculture.ks.gov/,Department of Agriculture,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.agriculture.nh.gov,https://www.agriculture.nh.gov/,"Department of Agriculture, Markets & Food",New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.agriculture.pa.gov,https://www.agriculture.pa.gov/Pages/default.aspx,Department of Agriculture,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.ahrq.gov,https://www.ahrq.gov/,Agency for Healthcare Research and Quality,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ahrq.gov,https://www.ahrq.gov/contact/index.html,Contact the Agency for Healthcare Research and Quality,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ahrq.gov,https://www.ahrq.gov/cpi/about/directions/index.html,Maps and directions to the Agency for Healthcare Research and Quality,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.americansamoa.gov,https://www.americansamoa.gov/governorpula,American Samoa (AS),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.ams.usda.gov,https://www.ams.usda.gov/,Agricultural Marketing Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ams.usda.gov,https://www.ams.usda.gov/about-ams/contact-us,Contact the Agricultural Marketing Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ams.usda.gov,https://www.ams.usda.gov/local-food-directories/farmersmarkets,Find your local farmers market in the National Farmers Market directory,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.aoc.gov,https://www.aoc.gov/,Architect of the Capitol,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.aoc.gov,https://www.aoc.gov/contact-form,Contact the Architect of the Capitol,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.aphis.usda.gov,https://www.aphis.usda.gov/aphis/home/,Animal and Plant Health Inspection Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.aphis.usda.gov,https://www.aphis.usda.gov/aphis/banner/contactus,Contact the Animal and Plant Health Inspection Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.arc.gov,https://www.arc.gov/,Appalachian Regional Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.arc.gov,https://www.arc.gov/contact-arc/,Contact the Appalachian Regional Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.archives.gov,https://www.archives.gov/,National Archives and Records Administration,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.archives.gov,https://www.archives.gov/contact,Contact the National Archives and Records Administration,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.archives.gov,https://www.archives.gov/locations,National Archives facilities by state,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.arctic.gov,https://www.arctic.gov/,U.S. Arctic Research Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.arctic.gov,https://www.arctic.gov/contact/,Contact the U.S. Arctic Research Commission,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ars.usda.gov,https://www.ars.usda.gov/,Agricultural Research Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ars.usda.gov,https://www.ars.usda.gov/contact-us/?modeCode=00-00-00-00,Contact the Agricultural Research Service,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ars.usda.gov,https://www.ars.usda.gov/people-locations/find-a-location/,Find an Agricultural Research Service office near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.atf.gov,https://www.atf.gov/,"Bureau of Alcohol, Tobacco, Firearms and Explosives",Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.atf.gov,https://www.atf.gov/contact,"Contact the Bureau of Alcohol, Tobacco, Firearms and Explosives",Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.atg.wa.gov,https://www.atg.wa.gov/,Washington (WA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.atg.wa.gov,https://www.atg.wa.gov/consumer-protection,Consumer Protection,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.atsdr.cdc.gov,https://www.atsdr.cdc.gov/,Agency for Toxic Substances and Disease Registry,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.atsdr.cdc.gov,https://www.atsdr.cdc.gov/contacts.html,Contact the Agency for Toxic Substances and Disease Registry,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.atsdr.cdc.gov,https://www.atsdr.cdc.gov/regional-offices/index.html,Find your regional office of the Agency for Toxic Substances and Disease Registry,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.attorneygeneral.gov,https://www.attorneygeneral.gov/,Pennsylvania (PA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.attorneygeneral.gov,https://www.attorneygeneral.gov/protect-yourself/consumer-advisories/,Consumer Advisories,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.azag.gov,https://www.azag.gov/,Arizona (AZ),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.azag.gov,https://www.azag.gov/consumer,Consumer Protection,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,www.azdhs.gov,https://www.azdhs.gov/,Department of Health Services,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,www.azed.gov,https://www.azed.gov/,Department of Education,Arizona Government,https://www.usa.gov/states/arizona
+Federal Agency,www.ca.gov,https://www.ca.gov/,California,California Government,https://www.usa.gov/states/california
+Federal Agency,www.caloes.ca.gov,https://www.caloes.ca.gov/,Governor's Office of Emergency Services,California Government,https://www.usa.gov/states/california
+Federal Agency,www.cd.nm.gov,https://www.cd.nm.gov/,Corrections Department,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.cdcr.ca.gov,https://www.cdcr.ca.gov/,Department of Corrections and Rehabilitation,California Government,https://www.usa.gov/states/california
+Federal Agency,www.cde.ca.gov,https://www.cde.ca.gov/,Department of Education,California Government,https://www.usa.gov/states/california
+Federal Agency,www.cdfa.ca.gov,https://www.cdfa.ca.gov/,Department of Food and Agriculture,California Government,https://www.usa.gov/states/california
+Federal Agency,www.cdph.ca.gov,https://www.cdph.ca.gov/,Department of Public Health,California Government,https://www.usa.gov/states/california
+Federal Agency,www.cdss.ca.gov,https://www.cdss.ca.gov/,Department of Social Services,California Government,https://www.usa.gov/states/california
+Federal Agency,www.chfs.ky.gov,https://www.chfs.ky.gov/Pages/Social-Services.aspx,Social Services,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,www.chfs.ky.gov,https://www.chfs.ky.gov/agencies/dph/Pages/default.aspx,Department of Public Health,Kentucky Government,https://www.usa.gov/states/kentucky
+Federal Agency,www.clinicaltrials.gov,https://www.clinicaltrials.gov/,Find clinical trials,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.cor.pa.gov,https://www.cor.pa.gov/Pages/default.aspx,Department of Corrections,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.corrections.nh.gov,https://www.corrections.nh.gov/,Department of Corrections,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.dac.nc.gov,https://www.dac.nc.gov/,Department of Adult Correction,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.dca.ca.gov,https://www.dca.ca.gov/,Department of Consumer Affairs,California Government,https://www.usa.gov/states/california
+Federal Agency,www.dcf.ks.gov,https://www.dcf.ks.gov/Pages/default.aspx,Department for Children and Families,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.des.nd.gov,https://www.des.nd.gov/,Department of Emergency Services,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.dhhs.nh.gov,https://www.dhhs.nh.gov/,Department of Health and Human Services,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.dhhs.nh.gov,https://www.dhhs.nh.gov/programs-services/health-care,Health and Human Services â Health Care,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.dhsem.nm.gov,https://www.dhsem.nm.gov/,Department of Homeland Security & Emergency Management,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.dhses.ny.gov,https://www.dhses.ny.gov/office-emergency-management,Homeland Security and Emergency Management,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.dmv.ca.gov,https://www.dmv.ca.gov/portal/,Motor Vehicles,California Government,https://www.usa.gov/states/california
+Federal Agency,www.dmv.de.gov,https://www.dmv.de.gov/,Motor Vehicles,Delaware Government,https://www.usa.gov/states/delaware
+Federal Agency,www.dmv.pa.gov,https://www.dmv.pa.gov/Pages/default.aspx,Motor Vehicles,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.doc.ks.gov,https://www.doc.ks.gov/,Department of Corrections,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.doc.sc.gov,https://www.doc.sc.gov/,Department of Corrections,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,www.doc.wa.gov,https://www.doc.wa.gov/,Department of Corrections,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.docr.nd.gov,https://www.docr.nd.gov/,Department of Corrections and Rehabilitation,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.doj.nh.gov,https://www.doj.nh.gov/,New Hampshire (NH),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.doj.nh.gov,https://www.doj.nh.gov/citizens/consumer-protection-antitrust-bureau,Consumer Protection and Antitrust Bureau,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.dol.wa.gov,https://www.dol.wa.gov/,Motor Vehicles,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.dos.pa.gov,https://www.dos.pa.gov/VotingElections/Pages/default.aspx,Voting & Elections,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.dot.nd.gov,https://www.dot.nd.gov/,Motor Vehicles,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.dpi.nc.gov,https://www.dpi.nc.gov/,Department of Public Instruction,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.dps.mn.gov,https://www.dps.mn.gov/divisions/hsem/Pages/default.aspx,Homeland Security and Emergency Management,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,www.dshs.wa.gov,https://www.dshs.wa.gov/,Department of Social and Health Services,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.education.ne.gov,https://www.education.ne.gov/,Department of Education,Nebraska Government,https://www.usa.gov/states/nebraska
+Federal Agency,www.education.nh.gov,https://www.education.nh.gov/,Department of Education,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.education.pa.gov,https://www.education.pa.gov/Pages/default.aspx,Department of Education,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.elections.il.gov,https://www.elections.il.gov/,Board of Elections,Illinois Government,https://www.usa.gov/states/illinois
+Federal Agency,www.elections.ny.gov,https://www.elections.ny.gov/,Board of Elections,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/state-governments&v=3,,State & Tribal Governments,https://www.usa.gov/state-tribal-governments
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/elected-officials&v=3,,Elected Officials,https://www.usa.gov/elected-officials
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/branches-of-government&v=3,,Government Branches,https://www.usa.gov/branches-of-government
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/agency-index&v=3,,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/state-governor&v=3,,State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/state-attorney-general&v=3,,State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.fdacs.gov,https://www.fdacs.gov/,Department of Agriculture and Consumer Services,Florida Government,https://www.usa.gov/states/florida
+Federal Agency,www.fdacs.gov,https://www.fdacs.gov/Divisions-Offices/Consumer-Services,Division of Consumer Services,Florida Government,https://www.usa.gov/states/florida
+Federal Agency,www.flhsmv.gov,https://www.flhsmv.gov/,Motor Vehicles,Florida Government,https://www.usa.gov/states/florida
+Federal Agency,www.fortaleza.pr.gov,https://www.fortaleza.pr.gov/,Puerto Rico (PR),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.gov.ca.gov,https://www.gov.ca.gov/,California (CA),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.gov.ca.gov,https://www.gov.ca.gov/contact/,Contact Governor Newsom,California Government,https://www.usa.gov/states/california
+Federal Agency,www.governor.ks.gov,https://www.governor.ks.gov/,Kansas (KS),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.governor.ks.gov,https://www.governor.ks.gov/contact/contact,Contact Governor Kelly,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.governor.nd.gov,https://www.governor.nd.gov/,North Dakota (ND),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.governor.nd.gov,https://www.governor.nd.gov/contact,Contact Governor Armstrong,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.governor.nh.gov,https://www.governor.nh.gov/,New Hampshire (NH),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.governor.nh.gov,https://www.governor.nh.gov/contact-governor-ayotte,Contact Governor Ayotte,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.governor.ny.gov,https://www.governor.ny.gov/,New York (NY),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.governor.ny.gov,https://www.governor.ny.gov/content/governor-contact-form,Contact Governor Hochul,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.governor.pa.gov,https://www.governor.pa.gov/contact/,Contact Governor Shapiro,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.hca.nm.gov,https://www.hca.nm.gov/,Human Services Department,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.health.ny.gov,https://www.health.ny.gov/,Department of Health,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.health.pa.gov,https://www.health.pa.gov/Pages/default.aspx,Department of Health,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.hhs.nd.gov,https://www.hhs.nd.gov/,Health and Human Services,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.hhs.nd.gov,https://www.hhs.nd.gov/health,Public Health,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.ilsos.gov,https://www.ilsos.gov/departments/vehicles/home.html,Motor Vehicles,Illinois Government,https://www.usa.gov/states/illinois
+Federal Agency,www.in.gov,https://www.in.gov/gov/,Indiana (IN),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.in.gov,https://www.in.gov/attorneygeneral/,Indiana (IN),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.in.gov,https://www.in.gov/core/index.html,Indiana,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/gov/ask-mike/,Contact Governor Braun,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/isda/,Department of Agriculture,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/fssa/,Family and Social Services Administration,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/attorneygeneral/consumer-protection-division/,Consumer Protection Division,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/idoc/,Department of Correction,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/ipac/,Prosecuting Attorneys Council,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/doe/,Department of Education,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/dhs/emergency-management-and-preparedness/,Emergency Management and Prepardness,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/health/,Department of Health,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.in.gov,https://www.in.gov/bmv/,Motor Vehicles,Indiana Government,https://www.usa.gov/states/indiana
+Federal Agency,www.justice.gov,https://www.justice.gov/atr,Antitrust Division,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.justice.gov,https://www.justice.gov/atr/contact-information,Contact the Antitrust Division,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.justice.gov,https://www.justice.gov/atr/antitrust-division-leadership-section-and-office-directory#fo,Find an Antitrust Division office near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.justice.gov,https://www.justice.gov/jmd/ls/state,"Find the federal, state, and territory courts that serve your area",Courts,https://www.usa.gov/courts
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-de,U.S. Attorney's Office - District of Delaware,Delaware Government,https://www.usa.gov/states/delaware
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-id,The United States Attorney's Office - District of Idaho,Idaho Government,https://www.usa.gov/states/idaho
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-cdil,The United States Attorney's Office - District of Illinois,Illinois Government,https://www.usa.gov/states/illinois
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-ndia,The United States District Attorneys Office - District of Northern Iowa,Iowa Government,https://www.usa.gov/states/iowa
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-ks,The United States Attorney's Office - District of Kansas,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-md,United States Attorney's Office - District of Maryland,Maryland Government,https://www.usa.gov/states/maryland
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-edmi,The United States Attorney's Office - Eastern District of Michigan,Michigan Government,https://www.usa.gov/states/michigan
+Federal Agency,www.justice.gov,https://www.justice.gov/usao/mn/,The United States Attorney's Office - Minnesota District,Minnesota Government,https://www.usa.gov/states/minnesota
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-sdms,The United States Attorney's Office - Southern District of Mississippi,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-mt,The United States Attorney's Office - District of Montana,Montana Government,https://www.usa.gov/states/montana
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-ne,The United States Attorney's Office - District of Nebraska,Nebraska Government,https://www.usa.gov/states/nebraska
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-nv,The United States Attorney's Office - District of Nevada,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-nh,The United States Attorney's Office - District of New Hampshire,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-nj,The United States Attorney's Office - District of New Jersey,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-nd,The United States Attorney's Office - District of North Dakota,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-or,The United States Attorney's Office - Oregon District,Oregon Government,https://www.usa.gov/states/oregon
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-sc,The United States Attorney's Office - District of South Carolina,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Federal Agency,www.justice.gov,https://www.justice.gov/usao/sd/,The United States Attorney's Office - District of South Dakota,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-ut,The United States Attorney's Office - Utah District,Utah Government,https://www.usa.gov/states/utah
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-vt,The United States Attorney's Office - District of Vermont,Vermont Government,https://www.usa.gov/states/vermont
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-edva,The United States Attorney's Office - Eastern and Western Districts of Virginia,Virginia Government,https://www.usa.gov/states/virginia
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-wdwa,The United States Attorney's Office - Western District of Washington,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.justice.gov,https://www.justice.gov/usao-wy,United States Attorney's Office - District of Wyoming,Wyoming Government,https://www.usa.gov/states/wyoming
+Federal Agency,www.justicia.pr.gov,https://www.justicia.pr.gov/,Puerto Rico (PR),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.kdhe.ks.gov,https://www.kdhe.ks.gov/,Department of Health and Environment,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.ksrevenue.gov,https://www.ksrevenue.gov/dovindex.html,Motor Vehicles,Kansas Government,https://www.usa.gov/states/kansas
+Federal Agency,www.legalaffairs.as.gov,https://www.legalaffairs.as.gov/,American Samoa (AS),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.mass.gov,https://www.mass.gov/orgs/governor-maura-healey-and-lt-governor-kim-driscoll,Massachusetts (MA),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.mass.gov,https://www.mass.gov/orgs/office-of-the-attorney-general,Massachusetts (MA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.mass.gov,https://www.mass.gov/,Massachusetts,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mass.gov,https://www.mass.gov/forms/email-the-governors-office,Contact Governor Healey,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mass.gov,https://www.mass.gov/topics/health-social-services,Health and Social Services,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mass.gov,https://www.mass.gov/orgs/office-of-consumer-affairs-and-business-regulation,Office of Consumer Affairs and Business Regulation,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mass.gov,https://www.mass.gov/directory-of-district-attorney-offices,District Attorney Offices,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mass.gov,https://www.mass.gov/orgs/department-of-public-health,Department of Public Health,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Federal Agency,www.mdac.ms.gov,https://www.mdac.ms.gov/,Department of Agriculture and Commerce,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.mdhs.ms.gov,https://www.mdhs.ms.gov/,Department of Human Services,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.mdoc.ms.gov,https://www.mdoc.ms.gov/,Department of Corrections,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.mmvc.ms.gov,https://www.mmvc.ms.gov/,Motor Vehicles,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.mo.gov,https://www.mo.gov/,Missouri,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,www.ms.gov,https://www.ms.gov/,Mississippi,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.mvd.newmexico.gov,https://www.mvd.newmexico.gov/,Motor Vehicles,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.nal.usda.gov,https://www.nal.usda.gov/,National Agricultural Library,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.nal.usda.gov,https://www.nal.usda.gov/contact-us,Contact the National Agricultural Library,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.nc.gov,https://www.nc.gov/,North Carolina,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncagr.gov,https://www.ncagr.gov/,Department of Agriculture and Consumer Services,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncdhhs.gov,https://www.ncdhhs.gov/divisions/social-services,Division of Social Services,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncdhhs.gov,https://www.ncdhhs.gov/,Department of Health and Human Services,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncdot.gov,https://www.ncdot.gov/dmv/Pages/default.aspx,Motor Vehicles,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncdps.gov,https://www.ncdps.gov/our-organization/emergency-management,Emergency Management,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.ncsbe.gov,https://www.ncsbe.gov/,State Board of Elections,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Federal Agency,www.nd.gov,https://www.nd.gov/,North Dakota,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.nd.gov,https://www.nd.gov/dpi/,Department of Public Instruction,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.ndda.nd.gov,https://www.ndda.nd.gov/,Department of Agriculture,North-Dakota Government,https://www.usa.gov/states/north-dakota
+Federal Agency,www.nh.gov,https://www.nh.gov/index.htm,New Hampshire,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.nh.gov,https://www.nh.gov/safety/divisions/hsem/,Homeland Security and Emergency Management,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.niams.nih.gov,https://www.niams.nih.gov/,"National Institute ofÂ Arthritis, Musculoskeletal and Skin Diseases",Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.niams.nih.gov,https://www.niams.nih.gov/about/contact-us,"Contact the National Institute of Arthritis, Musculoskeletal and Skin Diseases",Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.nj.gov,https://www.nj.gov/governor/,New Jersey (NJ),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.nj.gov,https://www.nj.gov/,New Jersey,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/governor/contact/all/,Contact Governor Murphy,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/agriculture/,Department of Agriculture,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/humanservices/,Department of Human Services,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/corrections/pages/index.shtml,Department of Corrections,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/education/,Department of Education,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/state/elections/vote.shtml,Elections and Voting,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/njoem/,Office of Emergency Management,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/health/,Department of Health,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.nj.gov,https://www.nj.gov/mvc/index.html,Motor Vehicles,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.njconsumeraffairs.gov,https://www.njconsumeraffairs.gov/,Division of Consumer Affairs,New-Jersey Government,https://www.usa.gov/states/new-jersey
+Federal Agency,www.njoag.gov,https://www.njoag.gov/,New Jersey (NJ),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.nm.gov,https://www.nm.gov/,New Mexico,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.nvsos.gov,https://www.nvsos.gov/sos/elections,Elections,Nevada Government,https://www.usa.gov/states/nevada
+Federal Agency,www.ny.gov,https://www.ny.gov/,New York,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.ny.gov,https://www.ny.gov/services/social-programs,Social Services,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.nysed.gov,https://www.nysed.gov/,Education Department,New-York Government,https://www.usa.gov/states/new-york
+Federal Agency,www.oag.ca.gov,https://www.oag.ca.gov/,California (CA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.ok.gov,https://www.ok.gov/dac/,District Attorneys Council,Oklahoma Government,https://www.usa.gov/states/oklahoma
+Federal Agency,www.pa.gov,https://www.pa.gov/en/governor.html,Pennsylvania (PA),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.pa.gov,https://www.pa.gov/,Pennsylvania,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.pa.gov,https://www.pa.gov/en/agencies/dhs.html,Department of Human Services,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.pema.pa.gov,https://www.pema.pa.gov/Pages/default.aspx,Emergency Management Agency,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Federal Agency,www.prosecutors.mo.gov,https://www.prosecutors.mo.gov/directory,Office of Prosecution Services,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,www.rd.usda.gov,https://www.rd.usda.gov/about-rd/state-offices,Rural Development office locator,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ri.gov,https://www.ri.gov/,Rhode Island,Rhode-Island Government,https://www.usa.gov/states/rhode-island
+Federal Agency,www.sbe.wa.gov,https://www.sbe.wa.gov/,Board of Education,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.scag.gov,https://www.scag.gov/,South Carolina (SC),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.sd.gov,https://www.sd.gov,South Dakota,South-Dakota Government,https://www.usa.gov/states/south-dakota
+Federal Agency,www.sos.ca.gov,https://www.sos.ca.gov/elections,Elections and Voter Information,California Government,https://www.usa.gov/states/california
+Federal Agency,www.sos.la.gov,https://www.sos.la.gov/ElectionsAndVoting/Pages/default.aspx,Elections and Voting,Louisiana Government,https://www.usa.gov/states/louisiana
+Federal Agency,www.sos.mo.gov,https://www.sos.mo.gov/elections/,Elections and Voting,Missouri Government,https://www.usa.gov/states/missouri
+Federal Agency,www.sos.ms.gov,https://www.sos.ms.gov/elections-voting,Elections and Voting,Mississippi Government,https://www.usa.gov/states/mississippi
+Federal Agency,www.sos.nh.gov,https://www.sos.nh.gov/elections/voters,Voters and Elections,New-Hampshire Government,https://www.usa.gov/states/new-hampshire
+Federal Agency,www.sos.nm.gov,https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/,Voting and Elections,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Federal Agency,www.sos.wa.gov,https://www.sos.wa.gov/elections,Elections and Voting,Washington Government,https://www.usa.gov/states/washington
+Federal Agency,www.tn.gov,https://www.tn.gov/governor.html,Tennessee (TN),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.tn.gov,https://www.tn.gov/attorneygeneral.html,Tennessee (TN),State Attorneys General,https://www.usa.gov/state-attorney-general
+Federal Agency,www.tn.gov,https://www.tn.gov/,Tennessee,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/governor/contact-us.html,Contact Governor Lee,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/agriculture.html,Department of Agriculture,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/humanservices,Department of Human Services,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/correction.html,Department of Correction,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/education.html,Department of Education,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/tema.html,Emergency Management Agency,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/health.html,Department of Health,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.tn.gov,https://www.tn.gov/content/tn/driver-services.html,Motor Vehicles,Tennessee Government,https://www.usa.gov/states/tennessee
+Federal Agency,www.ttb.gov,https://www.ttb.gov,Alcohol and Tobacco Tax and Trade Bureau,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ttb.gov,https://www.ttb.gov/about-ttb/contact-us,Contact the Alcohol and Tobacco Tax and Trade Bureau,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.ttb.gov,https://www.ttb.gov/trade-investigations/tid-map,Find a field office of The Alcohol and Tobacco Tax and Trade Bureau,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.txdmv.gov,https://www.txdmv.gov/,Motor Vehicles,Texas Government,https://www.usa.gov/states/texas
+Federal Agency,www.usadf.gov,https://www.usadf.gov/,African Development Foundation,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usadf.gov,https://www.usadf.gov/contact-us,Contact the African Development Foundation,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usagm.gov,https://www.usagm.gov/,U.S. Agency for Global Media,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usagm.gov,https://www.usagm.gov/contact-us/,Contact the U.S. Agency for Global Media,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usaid.gov,http://www.usaid.gov/,U.S. Agency for International Development,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usaid.gov,https://www.usaid.gov/contact-us,Contact the U.S. Agency for International Development,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usaid.gov,http://www.usaid.gov/mission-directory,U.S. Agency for International Development mission directory,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usda.gov,https://www.usda.gov/,U.S. Department of Agriculture,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.usda.gov,https://www.usda.gov/about-usda/general-information/contact-us,Contact the U.S. Department of Agriculture,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.vaemergency.gov,https://www.vaemergency.gov/,Department of Emergency Management,Virginia Government,https://www.usa.gov/states/virginia
+Federal Agency,www.vi.gov,https://www.vi.gov/governor-bryan/,U.S. Virgin Islands (VI),State Governors,https://www.usa.gov/state-governor
+Federal Agency,www.visitthecapitol.gov,https://www.visitthecapitol.gov/visit,Book a tour of the U.S. Capitol,Federal Agencies,https://www.usa.gov/federal-agencies
+Federal Agency,www.wv.gov,https://www.wv.gov/Pages/default.aspx,West Virginia,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Federal Agency,www.wyo.gov,https://www.wyo.gov/,Wyoming,Wyoming Government,https://www.usa.gov/states/wyoming
+Judicial/Courts,portal.ice.gov,https://portal.ice.gov/immigration-guide/court,Immigration court,Courts,https://www.usa.gov/courts
+Judicial/Courts,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/courts,,Courts,https://www.usa.gov/courts
+Judicial/Courts,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/courts&v=3,,Courts,https://www.usa.gov/courts
+Judicial/Courts,www.supremecourt.gov,https://www.supremecourt.gov/about/justices.aspx,Supreme Court,Government Branches,https://www.usa.gov/branches-of-government
+Judicial/Courts,www.uscourts.gov,https://www.uscourts.gov/,Administrative Office of the U.S. Courts,Federal Agencies,https://www.usa.gov/federal-agencies
+Judicial/Courts,www.uscourts.gov,https://www.uscourts.gov/contact-us,Contact the Administrative Office of the U.S. Courts,Federal Agencies,https://www.usa.gov/federal-agencies
+Judicial/Courts,www.uscourts.gov,https://www.uscourts.gov/federal-court-finder/search,Find a federal court near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Judicial/Courts,www.uscourts.gov,https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links,Federal courts,Courts,https://www.usa.gov/courts
+Local Government,alaska.gov,https://alaska.gov/communit.html,Alaska (AK),Local Governments,https://www.usa.gov/local-governments
+Local Government,apps.ilsos.gov,https://apps.ilsos.gov/isa/localgovnameindexsrch.jsp,Illinois (IL),Local Governments,https://www.usa.gov/local-governments
+Local Government,blog.usa.gov,https://blog.usa.gov/,Read our blog,Local Governments,https://www.usa.gov/local-governments
+Local Government,dccouncil.gov,https://dccouncil.gov/the-council/,District of Columbia (DC),Local Governments,https://www.usa.gov/local-governments
+Local Government,delaware.gov,https://delaware.gov/guides/municipalities/,Delaware (DE),Local Governments,https://www.usa.gov/local-governments
+Local Government,dola.colorado.gov,https://dola.colorado.gov/lgis/lgActiveAlpha.jsf,Colorado (CO),Local Governments,https://www.usa.gov/local-governments
+Local Government,idaho.gov,https://idaho.gov/counties/,Idaho (ID),Local Governments,https://www.usa.gov/local-governments
+Local Government,mn.gov,https://mn.gov/portal/government/local/,Minnesota (MN),Local Governments,https://www.usa.gov/local-governments
+Local Government,ohio.gov,https://ohio.gov/government/topic-hubs/local-government/,Ohio (OH),Local Governments,https://www.usa.gov/local-governments
+Local Government,opengov.sos.ri.gov,https://opengov.sos.ri.gov/GOVDirectoryPublic/OfficialSearch?topmenuId=104&amp;page=IdxMuni,Rhode Island (RI),Local Governments,https://www.usa.gov/local-governments
+Local Government,portal.arkansas.gov,https://portal.arkansas.gov/,Arkansas (AR),Local Governments,https://www.usa.gov/local-governments
+Local Government,portal.ct.gov,https://portal.ct.gov/en/Government/Cities-and-Towns,Connecticut (CT),Local Governments,https://www.usa.gov/local-governments
+Local Government,portal.ehawaii.gov,https://portal.ehawaii.gov/government/county-governments/,Hawaii (HI),Local Governments,https://www.usa.gov/local-governments
+Local Government,portal.kansas.gov,https://portal.kansas.gov/government/county-list/,Kansas (KS),Local Governments,https://www.usa.gov/local-governments
+Local Government,sc.gov,https://sc.gov/government,South Carolina (SC),Local Governments,https://www.usa.gov/local-governments
+Local Government,sos.ms.gov,https://sos.ms.gov/communications-publications/2020-2024-mississippi-blue-book,Mississippi (MS),Local Governments,https://www.usa.gov/local-governments
+Local Government,sos.oregon.gov,https://sos.oregon.gov/blue-book/Pages/local.aspx,Oregon (OR),Local Governments,https://www.usa.gov/local-governments
+Local Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/local-governments,,Local Governments,https://www.usa.gov/local-governments
+Local Government,wa.gov,https://wa.gov/your-government,Washington (WA),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/local-governments&v=3,,Local Governments,https://www.usa.gov/local-governments
+Local Government,www.gsa.gov,https://www.gsa.gov/,U.S. General Services Administration,Local Governments,https://www.usa.gov/local-governments
+Local Government,www.gsa.gov,https://www.gsa.gov/website-information/accessibility-statement?footer=,GSA accessibility support,Local Governments,https://www.usa.gov/local-governments
+Local Government,www.gsa.gov,https://www.gsa.gov/website-information/website-policies#privacy,GSA privacy policy,Local Governments,https://www.usa.gov/local-governments
+Local Government,www.gsa.gov,https://www.gsa.gov/reference/freedom-of-information-act-foia,FOIA requests,Local Governments,https://www.usa.gov/local-governments
+Local Government,www.in.gov,https://www.in.gov/counties/,Indiana (IN),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.iowa.gov,https://www.iowa.gov/local-government,Iowa (IA),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.kentucky.gov,https://www.kentucky.gov/government/Pages/local.aspx,Kentucky (KY),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.louisiana.gov,https://www.louisiana.gov/local-louisiana/,Louisiana (LA),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.maryland.gov,https://www.maryland.gov/pages/nearme.aspx,Maryland (MD),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.mass.gov,https://www.mass.gov/lists/massachusetts-city-and-town-websites,Massachusetts (MA),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.michigan.gov,https://www.michigan.gov/som/about-michigan/michigan-counties,Michigan (MI),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.mo.gov,https://www.mo.gov/government/city-county-government/,Missouri (MO),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.nd.gov,https://www.nd.gov/government/local-government,North Dakota (ND),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.nebraska.gov,https://www.nebraska.gov/attractions/city-county/,Nebraska (NE),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.nh.gov,https://www.nh.gov/government/cities-towns,New Hampshire (NH),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.nj.gov,https://www.nj.gov/nj/gov/county/,New Jersey (NJ),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.ny.gov,https://www.ny.gov/counties,New York (NY),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.sos.alabama.gov,https://www.sos.alabama.gov/index.php/city-county-lookup,Alabama (AL),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.tn.gov,https://www.tn.gov/directory/county-city-web-sites.html,Tennessee (TN),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.utah.gov,https://www.utah.gov/government/cityCounty.html,Utah (UT),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.vermont.gov,https://www.vermont.gov/towns-and-Cities#gsc.tab=0,Vermont (VT),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.virginia.gov,https://www.virginia.gov/local-government/,Virginia (VA),Local Governments,https://www.usa.gov/local-governments
+Local Government,www.wv.gov,https://www.wv.gov/local/Pages/default.aspx,West Virginia (WV),Local Governments,https://www.usa.gov/local-governments
+Military,installations.militaryonesource.mil,https://installations.militaryonesource.mil/,Find army installations,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.af.mil,https://www.af.mil/,U.S. Air Force,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.af.mil,https://www.af.mil/Contact-Us/,Contact the U.S. Air Force,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.afrc.af.mil,https://www.afrc.af.mil/,U.S. Air Force Reserve Command,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.afrc.af.mil,https://www.afrc.af.mil/Contact-Us/,Contact the U.S. Air Force Reserve Command,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.africom.mil,https://www.africom.mil/,U.S. Africa Command,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.africom.mil,https://www.africom.mil/contact-us,Contact the Africa Command,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.army.mil,https://www.army.mil/,U.S. Army,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.army.mil,https://www.army.mil/contact/,Contact the U.S. Army,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.usace.army.mil,http://www.usace.army.mil/,U.S. Army Corps of Engineers,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.usace.army.mil,https://www.usace.army.mil/Resources/Contact/,Contact the U.S. Army Corps of Engineers,Federal Agencies,https://www.usa.gov/federal-agencies
+Military,www.usace.army.mil,http://www.usace.army.mil/Locations.aspx,U.S. Army Corps of Engineers divisions and districts,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,aroostook.me.us,https://aroostook.me.us/maine-counties/,Maine (ME),Local Governments,https://www.usa.gov/local-governments
+Other,attorneygenerallynnfitch.com,https://attorneygenerallynnfitch.com/,Mississippi (MS),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,attorneygenerallynnfitch.com,https://attorneygenerallynnfitch.com/divisions/consumer-protection/,Consumer Protection Division,Mississippi Government,https://www.usa.gov/states/mississippi
+Other,ce.naco.org,https://ce.naco.org/?find=true,Nevada (NV),Local Governments,https://www.usa.gov/local-governments
+Other,coloradoprosecutors.org,https://coloradoprosecutors.org/your-da/find-my-da/,District Attorneys' Council,Colorado Government,https://www.usa.gov/states/colorado
+Other,directory.tml.org,https://directory.tml.org/,Texas (TX),Local Governments,https://www.usa.gov/local-governments
+Other,dos.myflorida.com,https://dos.myflorida.com/library-archives/research/florida-information/government/local-resources/fl-cities/,Florida (FL),Local Governments,https://www.usa.gov/local-governments
+Other,fdc.myflorida.com,https://fdc.myflorida.com/index.html,Department of Corrections,Florida Government,https://www.usa.gov/states/florida
+Other,flgov.com,https://flgov.com/eog/leadership/people/ron-desantis/contact,Contact Governor DeSantis,Florida Government,https://www.usa.gov/states/florida
+Other,manhattanda.org,https://manhattanda.org/,District Attorney's Office,New-York Government,https://www.usa.gov/states/new-york
+Other,md.accessgov.com,https://md.accessgov.com/governor/Forms/Page/cs/contact-the-governor/1,Contact Governor Moore,Maryland Government,https://www.usa.gov/states/maryland
+Other,nmdeptag.nmsu.edu,https://nmdeptag.nmsu.edu/,Department of Agriculture,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Other,pacga.org,https://pacga.org/,Prosecuting Attorneys' Council of Georgia,Georgia Government,https://www.usa.gov/states/georgia
+Other,rmiparliament.org,https://rmiparliament.org/cms/members.html,Republic of the Marshall Islands (MH),State Governors,https://www.usa.gov/state-governor
+Other,scdmvonline.com,https://scdmvonline.com/,Motor Vehicles,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Other,usvidoj.com,https://usvidoj.com/,U.S. Virgin Islands (VI),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,webnew.ped.state.nm.us,https://webnew.ped.state.nm.us/,Public Education Department,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Other,wv.accessgov.com,https://wv.accessgov.com/governor/Forms/Page/submitcomment-governor/contact-governor/0,Contact Governor Morrisey,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Other,wvde.us,https://wvde.us/,Department of Education,West-Virginia Government,https://www.usa.gov/states/west-virginia
+Other,www.ag.state.la.us,https://www.ag.state.la.us/,Louisiana (LA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.ag.state.la.us,https://www.ag.state.la.us/Division/PublicProtection#consumer-protection,Consumer Protection,Louisiana Government,https://www.usa.gov/states/louisiana
+Other,www.ag.state.mn.us,https://www.ag.state.mn.us/,Minnesota (MN),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.ag.state.mn.us,https://www.ag.state.mn.us/default.asp,Office of the Attorney General,Minnesota Government,https://www.usa.gov/states/minnesota
+Other,www.airforce.com,https://www.airforce.com/find-a-recruiter,Air Force recruiter locator,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,www.airforce.com,https://www.airforce.com/lifestyle/locations,Find Air Force installations,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,www.alabamaachieves.org,https://www.alabamaachieves.org/,Department of Education,Alabama Government,https://www.usa.gov/states/alabama
+Other,www.alhurra.com,https://www.alhurra.com/,AlhurraÂ TV,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,www.azcounties.org,https://www.azcounties.org,Arizona (AZ),Local Governments,https://www.usa.gov/local-governments
+Other,www.cdaa.org,https://www.cdaa.org/,California District Attorneys Association,California Government,https://www.usa.gov/states/california
+Other,www.cde.state.co.us,https://www.cde.state.co.us/,Department of Education,Colorado Government,https://www.usa.gov/states/colorado
+Other,www.cnmioag.org,https://www.cnmioag.org/,Northern Mariana Islands (MP),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.counties.org,https://www.counties.org/county-websites-profile-information,California (CA),Local Governments,https://www.usa.gov/local-governments
+Other,www.courts.state.hi.us,https://www.courts.state.hi.us/,District Attorneys,Hawaii Government,https://www.usa.gov/states/hawaii
+Other,www.dhs.state.il.us,https://www.dhs.state.il.us/page.aspx,Department of Human Services,Illinois Government,https://www.usa.gov/states/illinois
+Other,www.doe.mass.edu,https://www.doe.mass.edu/,Department of Elementary & Secondary Education,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Other,www.doj.state.or.us,https://www.doj.state.or.us/,Oregon (OR),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.doj.state.or.us,https://www.doj.state.or.us/consumer-protection/,Consumer Protection,Oregon Government,https://www.usa.gov/states/oregon
+Other,www.doj.state.wi.us,https://www.doj.state.wi.us/,Wisconsin (WI),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.dos.myflorida.com,https://www.dos.myflorida.com/elections/,Division of Elections,Florida Government,https://www.usa.gov/states/florida
+Other,www.dot.state.wy.us,https://www.dot.state.wy.us/driverservices,Motor Vehicles,Wyoming Government,https://www.usa.gov/states/wyoming
+Other,www.expresslane.org,https://www.expresslane.org/,Motor Vehicles,Louisiana Government,https://www.usa.gov/states/louisiana
+Other,www.fldoe.org,https://www.fldoe.org/,Department of Education,Florida Government,https://www.usa.gov/states/florida
+Other,www.flgov.com,https://www.flgov.com/,Florida (FL),State Governors,https://www.usa.gov/state-governor
+Other,www.floridadisaster.org,https://www.floridadisaster.org/,Division of Emergency Management,Florida Government,https://www.usa.gov/states/florida
+Other,www.fsmgov.org,https://www.fsmgov.org/ngovt.html,Federated States of Micronesia (FM),State Governors,https://www.usa.gov/state-governor
+Other,www.gacities.com,https://www.gacities.com/Directories/Member-Cities.aspx,Georgia (GA),Local Governments,https://www.usa.gov/local-governments
+Other,www.gadoe.org,https://www.gadoe.org/Pages/Home.aspx,Department of Education,Georgia Government,https://www.usa.gov/states/georgia
+Other,www.goarmy.com,https://www.goarmy.com/locate-a-recruiter.html,Army recruiter locator,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,www.hawaiipublicschools.org,https://www.hawaiipublicschools.org/Pages/Home.aspx,Department of Education,Hawaii Government,https://www.usa.gov/states/hawaii
+Other,www.health.state.mn.us,https://www.health.state.mn.us/,Department of Health,Minnesota Government,https://www.usa.gov/states/minnesota
+Other,www.isbe.net,https://www.isbe.net/,Board of Education,Illinois Government,https://www.usa.gov/states/illinois
+Other,www.ksde.org,https://www.ksde.org/,Department of Education,Kansas Government,https://www.usa.gov/states/kansas
+Other,www.kyagr.com,https://www.kyagr.com/,Department of Agriculture,Kentucky Government,https://www.usa.gov/states/kentucky
+Other,www.ldaa.org,https://www.ldaa.org/,District Attorneys Association,Louisiana Government,https://www.usa.gov/states/louisiana
+Other,www.ldaf.state.la.us,https://www.ldaf.state.la.us/,Department of Agriculture & Forestry,Louisiana Government,https://www.usa.gov/states/louisiana
+Other,www.louisianabelieves.com,https://www.louisianabelieves.com/,Department of Education,Louisiana Government,https://www.usa.gov/states/louisiana
+Other,www.mainecounties.org,https://www.mainecounties.org/district-attorneys.html,County District Attorneys,Maine Government,https://www.usa.gov/states/maine
+Other,www.marylandpublicschools.org,https://www.marylandpublicschools.org/Pages/Default.aspx,Department of Education,Maryland Government,https://www.usa.gov/states/maryland
+Other,www.mda.state.mn.us,https://www.mda.state.mn.us/,Department of Agriculture,Minnesota Government,https://www.usa.gov/states/minnesota
+Other,www.mdek12.org,https://www.mdek12.org/,Department of Education,Mississippi Government,https://www.usa.gov/states/mississippi
+Other,www.msema.org,https://www.msema.org/,Emergency Management Agency,Mississippi Government,https://www.usa.gov/states/mississippi
+Other,www.mtcounties.org,https://www.mtcounties.org/counties/contact-a-county/,Montana (MT),Local Governments,https://www.usa.gov/local-governments
+Other,www.myflfamilies.com,https://www.myflfamilies.com/,Department of Children and Families,Florida Government,https://www.usa.gov/states/florida
+Other,www.myflorida.com,https://www.myflorida.com/,Florida,Florida Government,https://www.usa.gov/states/florida
+Other,www.myfloridalegal.com,https://www.myfloridalegal.com/,Florida (FL),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.ncdistrictattorney.org,https://www.ncdistrictattorney.org/citizens/find-your-da/,District Attorneys,North-Carolina Government,https://www.usa.gov/states/north-carolina
+Other,www.ncsc.org,https://www.ncsc.org/resources-courts/who-what-when-how-state-courts,State and territory courts,Courts,https://www.usa.gov/courts
+Other,www.ncsc.org,https://www.ncsc.org/information-and-resources/state-court-websites,state or territory court website,Courts,https://www.usa.gov/courts
+Other,www.nmdas.com,https://www.nmdas.com/,District Attorneys Association,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Other,www.nmhealth.org,https://www.nmhealth.org/,Department of Heatlh,New-Mexico Government,https://www.usa.gov/states/new-mexico
+Other,www.oag.state.va.us,https://www.oag.state.va.us/,Virginia (VA),State Attorneys General,https://www.usa.gov/state-attorney-general
+Other,www.oag.state.va.us,https://www.oag.state.va.us/consumer-protection/,Consumer Protection,Virginia Government,https://www.usa.gov/states/virginia
+Other,www.ohiopa.org,https://www.ohiopa.org/yourprosecutor.html,Prosecuting Attorneys Association,Ohio Government,https://www.usa.gov/states/ohio
+Other,www.pacounties.org,https://www.pacounties.org/who-we-are/pennsylvania-county-by-class,Pennsylvania (PA),Local Governments,https://www.usa.gov/local-governments
+Other,www.palaugov.pw,https://www.palaugov.pw/executive-branch/president/,Republic of Palau (PW),State Governors,https://www.usa.gov/state-governor
+Other,www.pdaa.org,https://www.pdaa.org/pdaa/,District Attorneys Association,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+Other,www.scemd.org,https://www.scemd.org/,Emergency Management Division,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Other,www.scvotes.org,https://www.scvotes.org/,Election Commission,South-Carolina Government,https://www.usa.gov/states/south-carolina
+Other,www.sdcounties.org,https://www.sdcounties.org/counties/,South Dakota (SD),Local Governments,https://www.usa.gov/local-governments
+Other,www.sec.state.ma.us,https://www.sec.state.ma.us/divisions/elections/elections-and-voting.htm,Elections and Voting,Massachusetts Government,https://www.usa.gov/states/massachusetts
+Other,www.sog.unc.edu,https://www.sog.unc.edu/resources/microsites/knapp-library/counties-north-carolina,North Carolina (NC),Local Governments,https://www.usa.gov/local-governments
+Other,www.sos.state.co.us,https://www.sos.state.co.us/pubs/elections/main.html,Elections and Voting,Colorado Government,https://www.usa.gov/states/colorado
+Other,www.sos.state.mn.us,https://www.sos.state.mn.us/elections-voting/,Elections and Voting,Minnesota Government,https://www.usa.gov/states/minnesota
+Other,www.sos.state.oh.us,https://www.sos.state.oh.us/elections/voters/,Elections and Voting,Ohio Government,https://www.usa.gov/states/ohio
+Other,www.sos.state.tx.us,https://www.sos.state.tx.us/elections/index.shtml,Elections and Voting,Texas Government,https://www.usa.gov/states/texas
+Other,www.tdcaa.com,https://www.tdcaa.com/,District & County Attorneys Association,Texas Government,https://www.usa.gov/states/texas
+Other,www.tndagc.org,https://www.tndagc.org/,District Attorneys General Conference,Tennessee Government,https://www.usa.gov/states/tennessee
+Other,www.travelok.com,https://www.travelok.com/cities-and-regions,Oklahoma (OK),Local Governments,https://www.usa.gov/local-governments
+Other,www.usdalocalfoodportal.com,https://www.usdalocalfoodportal.com/fe/fdirectory_farmersmarket/,Find a Department of Agriculture farmers market near you,Federal Agencies,https://www.usa.gov/federal-agencies
+Other,www.wicounties.org,https://www.wicounties.org/the-counties/,Wisconsin (WI),Local Governments,https://www.usa.gov/local-governments
+Other,wyo-wcca.org,https://wyo-wcca.org/county-information/,Wyoming (WY),Local Governments,https://www.usa.gov/local-governments
+State Government,ade.arkansas.gov,https://ade.arkansas.gov/,Department of Education,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,ag.colorado.gov,https://ag.colorado.gov/,Department of Agriculture,Colorado Government,https://www.usa.gov/states/colorado
+State Government,ag.hawaii.gov,https://ag.hawaii.gov/contact-us/,Hawaii (HI),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,ag.utah.gov,https://ag.utah.gov/,Department of Agriculture and Food,Utah Government,https://www.usa.gov/states/utah
+State Government,agi.alabama.gov,https://agi.alabama.gov/,Department of Agriculture & Industries,Alabama Government,https://www.usa.gov/states/alabama
+State Government,ago.nebraska.gov,https://ago.nebraska.gov/,Nebraska (NE),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,ago.vermont.gov,https://ago.vermont.gov/,Vermont (VT),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,ago.vermont.gov,https://ago.vermont.gov/cap,Consumer Assistance Program,Vermont Government,https://www.usa.gov/states/vermont
+State Government,agr.illinois.gov,https://agr.illinois.gov/,Department of Agriculture,Illinois Government,https://www.usa.gov/states/illinois
+State Government,agri.idaho.gov,https://agri.idaho.gov,Department of Agriculture,Idaho Government,https://www.usa.gov/states/idaho
+State Government,agri.ohio.gov,https://agri.ohio.gov/,Department of Agriculture,Ohio Government,https://www.usa.gov/states/ohio
+State Government,agriculture.delaware.gov,https://agriculture.delaware.gov/,Department of Agriculture,Delaware Government,https://www.usa.gov/states/delaware
+State Government,agriculture.vermont.gov,https://agriculture.vermont.gov/,Agency of Agriculture Food & Markets,Vermont Government,https://www.usa.gov/states/vermont
+State Government,alaska.gov,https://alaska.gov/,Alaska homepage,Alaska Government,https://www.usa.gov/states/alaska
+State Government,arkansasag.gov,https://arkansasag.gov/,Arkansas (AR),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,arkansasag.gov,https://arkansasag.gov/divisions/public-protection/consumer-protection/,Consumer Protection Division,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,attorneygeneral.delaware.gov,https://attorneygeneral.delaware.gov/,Delaware (DE),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,attorneygeneral.delaware.gov,https://attorneygeneral.delaware.gov/fraud/cpu/,Fraud and Consumer Protection Division,Delaware Government,https://www.usa.gov/states/delaware
+State Government,attorneygeneral.utah.gov,https://attorneygeneral.utah.gov/,Utah (UT),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,azgovernor.gov,https://azgovernor.gov/office-arizona-governor/form/contact-governor-hobbs,Contact Governor Hobbs,Arizona Government,https://www.usa.gov/states/arizona
+State Government,cca.hawaii.gov,https://cca.hawaii.gov/ocp/,Office of Consumer Protection,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,cdhs.colorado.gov,https://cdhs.colorado.gov/,Department of Human Services,Colorado Government,https://www.usa.gov/states/colorado
+State Government,cdoc.colorado.gov,https://cdoc.colorado.gov/,Department of Corrections,Colorado Government,https://www.usa.gov/states/colorado
+State Government,cdphe.colorado.gov,https://cdphe.colorado.gov/emergency-preparedness-response,Emergency Prepareness and Response,Colorado Government,https://www.usa.gov/states/colorado
+State Government,cdphe.colorado.gov,https://cdphe.colorado.gov/,Department of Public Health and Environment,Colorado Government,https://www.usa.gov/states/colorado
+State Government,consumer.georgia.gov,https://consumer.georgia.gov/,Consumer Protection Division,Georgia Government,https://www.usa.gov/states/georgia
+State Government,corrections.utah.gov,https://corrections.utah.gov/,Department of Corrections,Utah Government,https://www.usa.gov/states/utah
+State Government,dcf.wisconsin.gov,https://dcf.wisconsin.gov/,Department of Children and Families,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State Government,dcp.utah.gov,https://dcp.utah.gov/,Division of Consumer Protection,Utah Government,https://www.usa.gov/states/utah
+State Government,dcr.hawaii.gov,https://dcr.hawaii.gov/,Corrections Division,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,dds.georgia.gov,https://dds.georgia.gov/,Motor Vehicles,Georgia Government,https://www.usa.gov/states/georgia
+State Government,delaware.gov,https://delaware.gov/,Delaware,Delaware Government,https://www.usa.gov/states/delaware
+State Government,dem.utah.gov,https://dem.utah.gov/,Department of Public Safety - Division of Emergency Management,Utah Government,https://www.usa.gov/states/utah
+State Government,dema.delaware.gov,https://dema.delaware.gov/,Emergency Management Agency,Delaware Government,https://www.usa.gov/states/delaware
+State Government,dfcs.alaska.gov,https://dfcs.alaska.gov/Pages/default.aspx,Department of Family and Community Services,Alaska Government,https://www.usa.gov/states/alaska
+State Government,dhhs.utah.gov,https://dhhs.utah.gov/services/,Social Services,Utah Government,https://www.usa.gov/states/utah
+State Government,dhhs.utah.gov,https://dhhs.utah.gov/,Department of Health and Human Services,Utah Government,https://www.usa.gov/states/utah
+State Government,dhr.alabama.gov,https://dhr.alabama.gov/family-services/,Family Services,Alabama Government,https://www.usa.gov/states/alabama
+State Government,dhs.georgia.gov,https://dhs.georgia.gov/,Department of Human Services,Georgia Government,https://www.usa.gov/states/georgia
+State Government,dhs.maryland.gov,https://dhs.maryland.gov/,Department of Human Services,Maryland Government,https://www.usa.gov/states/maryland
+State Government,dmv.alaska.gov,https://dmv.alaska.gov/home/,Division of Motor Vehicles,Alaska Government,https://www.usa.gov/states/alaska
+State Government,dmv.colorado.gov,https://dmv.colorado.gov/,Motor Vehicles,Colorado Government,https://www.usa.gov/states/colorado
+State Government,dmv.nebraska.gov,https://dmv.nebraska.gov/,Motor Vehicles,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,dmv.utah.gov,https://dmv.utah.gov/,Motor Vehicles,Utah Government,https://www.usa.gov/states/utah
+State Government,dmv.vermont.gov,https://dmv.vermont.gov/,Motor Vehicles,Vermont Government,https://www.usa.gov/states/vermont
+State Government,dnr.alaska.gov,https://dnr.alaska.gov/ag/,Department of Natural Resources - Division of Agriculture,Alaska Government,https://www.usa.gov/states/alaska
+State Government,doc.alabama.gov,https://doc.alabama.gov/,Department of Corrections,Alabama Government,https://www.usa.gov/states/alabama
+State Government,doc.alaska.gov,https://doc.alaska.gov/,Department of Corrections,Alaska Government,https://www.usa.gov/states/alaska
+State Government,doc.arkansas.gov,https://doc.arkansas.gov/,Department of Corrections,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,doc.delaware.gov,https://doc.delaware.gov/,Department of Correction,Delaware Government,https://www.usa.gov/states/delaware
+State Government,doc.iowa.gov,https://doc.iowa.gov,Department of Corrections,Iowa Government,https://www.usa.gov/states/iowa
+State Government,doc.louisiana.gov,https://doc.louisiana.gov/,Department of Public Safety and Corrections,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,doc.vermont.gov,https://doc.vermont.gov/,Department of Corrections,Vermont Government,https://www.usa.gov/states/vermont
+State Government,dod.hawaii.gov,https://dod.hawaii.gov/hiema/,Emergency Management Agency,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,dph.georgia.gov,https://dph.georgia.gov/,Department of Public Health,Georgia Government,https://www.usa.gov/states/georgia
+State Government,dph.illinois.gov,https://dph.illinois.gov/,Department of Public Health,Illinois Government,https://www.usa.gov/states/illinois
+State Government,dpscs.maryland.gov,https://dpscs.maryland.gov/,Department of Public Safety and Correctional Services,Maryland Government,https://www.usa.gov/states/maryland
+State Government,drc.ohio.gov,https://drc.ohio.gov/,Department of Rehabilitation and Correction,Ohio Government,https://www.usa.gov/states/ohio
+State Government,edu.wyoming.gov,https://edu.wyoming.gov/,Department of Education,Wyoming Government,https://www.usa.gov/states/wyoming
+State Government,educateiowa.gov,https://educateiowa.gov/,Department of Education,Iowa Government,https://www.usa.gov/states/iowa
+State Government,education.alaska.gov,https://education.alaska.gov/,Department of Education and Early Development,Alaska Government,https://www.usa.gov/states/alaska
+State Government,education.delaware.gov,https://education.delaware.gov/,Department of Education,Delaware Government,https://www.usa.gov/states/delaware
+State Government,education.ohio.gov,https://education.ohio.gov/,Department of Education and Workforce,Ohio Government,https://www.usa.gov/states/ohio
+State Government,education.vermont.gov,https://education.vermont.gov/,Agency of Education,Vermont Government,https://www.usa.gov/states/vermont
+State Government,elections.delaware.gov,https://elections.delaware.gov/index.shtml,Department of Elections,Delaware Government,https://www.usa.gov/states/delaware
+State Government,elections.hawaii.gov,https://elections.hawaii.gov/,Office of Elections,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,elections.maryland.gov,https://elections.maryland.gov/,Election Information,Maryland Government,https://www.usa.gov/states/maryland
+State Government,ema.alabama.gov,https://ema.alabama.gov/,Emergency Management,Alabama Government,https://www.usa.gov/states/alabama
+State Government,ema.ohio.gov,https://ema.ohio.gov/,Emergency Management Agency,Ohio Government,https://www.usa.gov/states/ohio
+State Government,gdc.georgia.gov,https://gdc.georgia.gov/,Department of Corrections,Georgia Government,https://www.usa.gov/states/georgia
+State Government,gema.georgia.gov,https://gema.georgia.gov/,Emergency Management Agency,Georgia Government,https://www.usa.gov/states/georgia
+State Government,georgia.gov,https://georgia.gov/,Georgia,Georgia Government,https://www.usa.gov/states/georgia
+State Government,gov.alaska.gov,https://gov.alaska.gov/,Alaska (AK),State Governors,https://www.usa.gov/state-governor
+State Government,gov.alaska.gov,https://gov.alaska.gov/contact/,Contact Governor Dunleavy,Alaska Government,https://www.usa.gov/states/alaska
+State Government,gov.georgia.gov,https://gov.georgia.gov/,Georgia (GA),State Governors,https://www.usa.gov/state-governor
+State Government,gov.georgia.gov,https://gov.georgia.gov/contact-us,Contact Governor Kemp,Georgia Government,https://www.usa.gov/states/georgia
+State Government,gov.idaho.gov,https://gov.idaho.gov/,Idaho (ID),State Governors,https://www.usa.gov/state-governor
+State Government,gov.idaho.gov,https://gov.idaho.gov/contact/contact-us/,Contact Governor Little,Idaho Government,https://www.usa.gov/states/idaho
+State Government,gov.illinois.gov,https://gov.illinois.gov/,Illinois (IL),State Governors,https://www.usa.gov/state-governor
+State Government,gov.illinois.gov,https://gov.illinois.gov/contact-us/contact-the-governor.html,Contact Governor Pritzker,Illinois Government,https://www.usa.gov/states/illinois
+State Government,gov.louisiana.gov,https://gov.louisiana.gov/,Louisiana (LA),State Governors,https://www.usa.gov/state-governor
+State Government,gov.louisiana.gov,https://gov.louisiana.gov/page/contact,Contact Governor Landry,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,gov.texas.gov,https://gov.texas.gov/,Texas (TX),State Governors,https://www.usa.gov/state-governor
+State Government,gov.texas.gov,https://gov.texas.gov/contact,Contact Governor Abbott,Texas Government,https://www.usa.gov/states/texas
+State Government,governor.alabama.gov,https://governor.alabama.gov/,Alabama (AL),State Governors,https://www.usa.gov/state-governor
+State Government,governor.alabama.gov,https://governor.alabama.gov/contact/,Contact Governor Ivey,Alabama Government,https://www.usa.gov/states/alabama
+State Government,governor.arkansas.gov,https://governor.arkansas.gov/,Arkansas (AR),State Governors,https://www.usa.gov/state-governor
+State Government,governor.arkansas.gov,https://governor.arkansas.gov/online-services/contact-the-governor/,Contact Governor Sanders,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,governor.delaware.gov,https://governor.delaware.gov/,Delaware (DE),State Governors,https://www.usa.gov/state-governor
+State Government,governor.delaware.gov,https://governor.delaware.gov/contact/,Contact Governor Meyer,Delaware Government,https://www.usa.gov/states/delaware
+State Government,governor.hawaii.gov,https://governor.hawaii.gov/,Hawaii (HI),State Governors,https://www.usa.gov/state-governor
+State Government,governor.hawaii.gov,https://governor.hawaii.gov/contact-us/contact-the-governor/,Contact Governor Green,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,governor.iowa.gov,https://governor.iowa.gov/,Iowa (IA),State Governors,https://www.usa.gov/state-governor
+State Government,governor.iowa.gov,https://governor.iowa.gov/contact-office-governor,Contact Governor Reynolds,Iowa Government,https://www.usa.gov/states/iowa
+State Government,governor.maryland.gov,https://governor.maryland.gov/leadership/Pages/governor.aspx,Maryland (MD),State Governors,https://www.usa.gov/state-governor
+State Government,governor.nebraska.gov,https://governor.nebraska.gov/,Nebraska (NE),State Governors,https://www.usa.gov/state-governor
+State Government,governor.nebraska.gov,https://governor.nebraska.gov/contact-governor,Contact Governor Pillen,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,governor.ohio.gov,https://governor.ohio.gov/home,Ohio (OH),State Governors,https://www.usa.gov/state-governor
+State Government,governor.ohio.gov,https://governor.ohio.gov/contact,Contact Governor DeWine,Ohio Government,https://www.usa.gov/states/ohio
+State Government,governor.utah.gov,https://governor.utah.gov/,Utah (UT),State Governors,https://www.usa.gov/state-governor
+State Government,governor.utah.gov,https://governor.utah.gov/contact/,Contact Governor Cox,Utah Government,https://www.usa.gov/states/utah
+State Government,governor.vermont.gov,https://governor.vermont.gov/,Vermont (VT),State Governors,https://www.usa.gov/state-governor
+State Government,governor.vermont.gov,https://governor.vermont.gov/contact,Contact Governor Scott,Vermont Government,https://www.usa.gov/states/vermont
+State Government,hdoa.hawaii.gov,https://hdoa.hawaii.gov/,Department of Agriculture,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,health.alaska.gov,https://health.alaska.gov/Pages/default.aspx,Department of Health,Alaska Government,https://www.usa.gov/states/alaska
+State Government,health.hawaii.gov,https://health.hawaii.gov/,Department of Health,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,health.maryland.gov,https://health.maryland.gov/pages/home.aspx,Department of Health,Maryland Government,https://www.usa.gov/states/maryland
+State Government,healthandwelfare.idaho.gov,https://healthandwelfare.idaho.gov/services-programs/children-families,Children & Family Services,Idaho Government,https://www.usa.gov/states/idaho
+State Government,healthandwelfare.idaho.gov,https://healthandwelfare.idaho.gov/,Department of Health and Welfare,Idaho Government,https://www.usa.gov/states/idaho
+State Government,hhs.iowa.gov,https://hhs.iowa.gov/programs-and-services,Social services,Iowa Government,https://www.usa.gov/states/iowa
+State Government,hhs.iowa.gov,https://hhs.iowa.gov/,Department of Health and Human Services,Iowa Government,https://www.usa.gov/states/iowa
+State Government,hidot.hawaii.gov,https://hidot.hawaii.gov/driverslicense/,Motor Vehicles,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,homelandsecurity.iowa.gov,https://homelandsecurity.iowa.gov/,Department of Homeland Security and Emergency Management,Iowa Government,https://www.usa.gov/states/iowa
+State Government,humanservices.arkansas.gov,https://humanservices.arkansas.gov/,Department of Human Services,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,humanservices.hawaii.gov,https://humanservices.hawaii.gov/,Department of Human Services,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,humanservices.vermont.gov,https://humanservices.vermont.gov/,Agency of Human Services,Vermont Government,https://www.usa.gov/states/vermont
+State Government,idoc.illinois.gov,https://idoc.illinois.gov/,Department of Corrections,Illinois Government,https://www.usa.gov/states/illinois
+State Government,iemaohs.illinois.gov,https://iemaohs.illinois.gov/,Emergency Management Agency and Office of Homeland Security,Illinois Government,https://www.usa.gov/states/illinois
+State Government,illinoisattorneygeneral.gov,https://illinoisattorneygeneral.gov/consumer-protection/,Consumer Protection Division,Illinois Government,https://www.usa.gov/states/illinois
+State Government,indianavoters.in.gov,https://indianavoters.in.gov/,Voter Portal,Indiana Government,https://www.usa.gov/states/indiana
+State Government,ioem.idaho.gov,https://ioem.idaho.gov/,Office of Emergency Management,Idaho Government,https://www.usa.gov/states/idaho
+State Government,iowaagriculture.gov,https://iowaagriculture.gov/,Department of Agriculture and Land Stewardship,Iowa Government,https://www.usa.gov/states/iowa
+State Government,iowadot.gov,https://iowadot.gov/driversvehicles,Motor Vehicles,Iowa Government,https://www.usa.gov/states/iowa
+State Government,itd.idaho.gov,https://itd.idaho.gov/itddmv/,Motor Vehicles,Idaho Government,https://www.usa.gov/states/idaho
+State Government,jfs.ohio.gov,https://jfs.ohio.gov/,Jobs and Family Services,Ohio Government,https://www.usa.gov/states/ohio
+State Government,law.alaska.gov,https://law.alaska.gov/department/about.html,Alaska (AK),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,law.georgia.gov,https://law.georgia.gov/,Georgia (GA),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,mda.maryland.gov,https://mda.maryland.gov/Pages/default.aspx,Department of Agriculture,Maryland Government,https://www.usa.gov/states/maryland
+State Government,mdem.maryland.gov,https://mdem.maryland.gov/Pages/default.aspx,Department of Emergency Management,Maryland Government,https://www.usa.gov/states/maryland
+State Government,mva.maryland.gov,https://mva.maryland.gov/Pages/default.aspx,Motor Vehicles,Maryland Government,https://www.usa.gov/states/maryland
+State Government,nda.nebraska.gov,https://nda.nebraska.gov/,Department of Agriculture,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,nema.nebraska.gov,https://nema.nebraska.gov/,Emergency Management Agency,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,odh.ohio.gov,https://odh.ohio.gov/home,Department of Health,Ohio Government,https://www.usa.gov/states/ohio
+State Government,ohio.gov,https://ohio.gov/home,Ohio,Ohio Government,https://www.usa.gov/states/ohio
+State Government,oklahoma.gov,https://oklahoma.gov/governor.html,Oklahoma (OK),State Governors,https://www.usa.gov/state-governor
+State Government,oklahoma.gov,https://oklahoma.gov/oag.html,Oklahoma (OK),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,oklahoma.gov,https://oklahoma.gov/,Oklahoma,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/governor/contact.html,Contact Governor Stitt,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/okdhs.html,Human Services,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/oag/about/divisions/cpu.html,Consumer Protection,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/doc.html,Department of Corrections,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/elections.html,Election Board,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/oem.html,Department of Emergency Management,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/health.html,Department of Health,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,oklahoma.gov,https://oklahoma.gov/dps.html,Motor Vehicles,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,ops.alabama.gov,https://ops.alabama.gov/,Office of Prosecution Services District Attorney Listing,Alabama Government,https://www.usa.gov/states/alabama
+State Government,portal.ehawaii.gov,https://portal.ehawaii.gov/,Hawaii,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,portal.kansas.gov,https://portal.kansas.gov/,Kansas,Kansas Government,https://www.usa.gov/states/kansas
+State Government,protectthegoodlife.nebraska.gov,https://protectthegoodlife.nebraska.gov/,Consumer Protection Division,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,ready.alaska.gov,https://ready.alaska.gov/,Division of Homeland Security and Emergency Management,Alaska Government,https://www.usa.gov/states/alaska
+State Government,register.state.gov,https://register.state.gov/contactus/contactusform,Contact the Office of the Under Secretary of State for Arms Control and International Security,Federal Agencies,https://www.usa.gov/federal-agencies
+State Government,sos.ga.gov,https://sos.ga.gov/elections-division-georgia-secretary-states-office,Elections Division of the Secretary of State Office,Georgia Government,https://www.usa.gov/states/georgia
+State Government,sos.iowa.gov,https://sos.iowa.gov/elections/voterinformation/index.html,Election and voting information,Iowa Government,https://www.usa.gov/states/iowa
+State Government,sos.oregon.gov,https://sos.oregon.gov/voting-elections/Pages/default.aspx,Voting and Elections,Oregon Government,https://www.usa.gov/states/oregon
+State Government,sos.vermont.gov,https://sos.vermont.gov/elections/,Elections Division,Vermont Government,https://www.usa.gov/states/vermont
+State Government,tea.texas.gov,https://tea.texas.gov/,Education Agency,Texas Government,https://www.usa.gov/states/texas
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/alabama,,Alabama Government,https://www.usa.gov/states/alabama
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/alaska,,Alaska Government,https://www.usa.gov/states/alaska
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/arizona,,Arizona Government,https://www.usa.gov/states/arizona
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/arkansas,,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/california,,California Government,https://www.usa.gov/states/california
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/colorado,,Colorado Government,https://www.usa.gov/states/colorado
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/connecticut,,Connecticut Government,https://www.usa.gov/states/connecticut
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/delaware,,Delaware Government,https://www.usa.gov/states/delaware
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/florida,,Florida Government,https://www.usa.gov/states/florida
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/georgia,,Georgia Government,https://www.usa.gov/states/georgia
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/hawaii,,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/idaho,,Idaho Government,https://www.usa.gov/states/idaho
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/illinois,,Illinois Government,https://www.usa.gov/states/illinois
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/indiana,,Indiana Government,https://www.usa.gov/states/indiana
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/iowa,,Iowa Government,https://www.usa.gov/states/iowa
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/kansas,,Kansas Government,https://www.usa.gov/states/kansas
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/kentucky,,Kentucky Government,https://www.usa.gov/states/kentucky
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/louisiana,,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/maine,,Maine Government,https://www.usa.gov/states/maine
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/maryland,,Maryland Government,https://www.usa.gov/states/maryland
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/massachusetts,,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/michigan,,Michigan Government,https://www.usa.gov/states/michigan
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/minnesota,,Minnesota Government,https://www.usa.gov/states/minnesota
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/mississippi,,Mississippi Government,https://www.usa.gov/states/mississippi
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/missouri,,Missouri Government,https://www.usa.gov/states/missouri
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/montana,,Montana Government,https://www.usa.gov/states/montana
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/nebraska,,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/nevada,,Nevada Government,https://www.usa.gov/states/nevada
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/new-jersey,,New-Jersey Government,https://www.usa.gov/states/new-jersey
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/new-mexico,,New-Mexico Government,https://www.usa.gov/states/new-mexico
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/new-york,,New-York Government,https://www.usa.gov/states/new-york
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/north-carolina,,North-Carolina Government,https://www.usa.gov/states/north-carolina
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/north-dakota,,North-Dakota Government,https://www.usa.gov/states/north-dakota
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/ohio,,Ohio Government,https://www.usa.gov/states/ohio
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/oklahoma,,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/oregon,,Oregon Government,https://www.usa.gov/states/oregon
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/pennsylvania,,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/south-carolina,,South-Carolina Government,https://www.usa.gov/states/south-carolina
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/south-dakota,,South-Dakota Government,https://www.usa.gov/states/south-dakota
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/tennessee,,Tennessee Government,https://www.usa.gov/states/tennessee
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/texas,,Texas Government,https://www.usa.gov/states/texas
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/utah,,Utah Government,https://www.usa.gov/states/utah
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/vermont,,Vermont Government,https://www.usa.gov/states/vermont
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/virginia,,Virginia Government,https://www.usa.gov/states/virginia
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/washington,,Washington Government,https://www.usa.gov/states/washington
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/west-virginia,,West-Virginia Government,https://www.usa.gov/states/west-virginia
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/wisconsin,,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State Government,twitter.com,https://twitter.com/intent/tweet?source=webclient&text=https://www.usa.gov/states/wyoming,,Wyoming Government,https://www.usa.gov/states/wyoming
+State Government,vadoc.virginia.gov,https://vadoc.virginia.gov/,Department of Corrections,Virginia Government,https://www.usa.gov/states/virginia
+State Government,vem.vermont.gov,https://vem.vermont.gov/,Emergency Management,Vermont Government,https://www.usa.gov/states/vermont
+State Government,vote.utah.gov,https://vote.utah.gov/,Elections,Utah Government,https://www.usa.gov/states/utah
+State Government,voteidaho.gov,https://voteidaho.gov/,Election and voting information,Idaho Government,https://www.usa.gov/states/idaho
+State Government,wisconsindot.gov,https://wisconsindot.gov/Pages/online-srvcs/external/dmv.aspx,Department of Motor Vehicles,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State Government,www.ag.idaho.gov,https://www.ag.idaho.gov/,Idaho (ID),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.ag.idaho.gov,https://www.ag.idaho.gov/consumer-protection/,Consumer Protection Division,Idaho Government,https://www.usa.gov/states/idaho
+State Government,www.agr.georgia.gov,https://www.agr.georgia.gov/,Department of Agriculture,Georgia Government,https://www.usa.gov/states/georgia
+State Government,www.agriculture.arkansas.gov,https://www.agriculture.arkansas.gov/,Department of Agriculture,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.alabama.gov,https://www.alabama.gov/,Alabama,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.alabamaag.gov,https://www.alabamaag.gov/,Alabama (AL),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.alabamaag.gov,https://www.alabamaag.gov/consumer-complaint/,Consumer Complaint,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.alabamapublichealth.gov,https://www.alabamapublichealth.gov/,Department of Public Health,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.bmv.ohio.gov,https://www.bmv.ohio.gov/,Motor Vehicles,Ohio Government,https://www.usa.gov/states/ohio
+State Government,www.colorado.gov,https://www.colorado.gov/governor/,Colorado (CO),State Governors,https://www.usa.gov/state-governor
+State Government,www.colorado.gov,https://www.colorado.gov/,Colorado,Colorado Government,https://www.usa.gov/states/colorado
+State Government,www.colorado.gov,https://www.colorado.gov/governor/contact-us,Contact Governor Polis,Colorado Government,https://www.usa.gov/states/colorado
+State Government,www.corrections.nebraska.gov,https://www.corrections.nebraska.gov/,Department of Correctional Services,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,www.dcfs.louisiana.gov,https://www.dcfs.louisiana.gov/,Department of Children and Family Services,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,www.dfa.arkansas.gov,https://www.dfa.arkansas.gov/motor-vehicle,Motor Vehicle,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.dhs.wisconsin.gov,https://www.dhs.wisconsin.gov/,Department of Health Services,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State Government,www.dhss.delaware.gov,https://www.dhss.delaware.gov/dhss/dss/,Division of Social Services,Delaware Government,https://www.usa.gov/states/delaware
+State Government,www.dhss.delaware.gov,https://www.dhss.delaware.gov/dhss/,Health and Social Services,Delaware Government,https://www.usa.gov/states/delaware
+State Government,www.dmv.virginia.gov,https://www.dmv.virginia.gov/#/,Motor Vehicles,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.doe.virginia.gov,https://www.doe.virginia.gov/,Department of Education,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.dps.arkansas.gov,https://www.dps.arkansas.gov/emergency-management/adem/,Division of Emergency Management,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.dshs.texas.gov,https://www.dshs.texas.gov/,State Health Services,Texas Government,https://www.usa.gov/states/texas
+State Government,www.dss.virginia.gov,https://www.dss.virginia.gov/,Department of Social Services,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.elections.alaska.gov,https://www.elections.alaska.gov/,Division of Elections,Alaska Government,https://www.usa.gov/states/alaska
+State Government,www.elections.virginia.gov,https://www.elections.virginia.gov/,Department of Elections,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/alabama&v=3,,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/alaska&v=3,,Alaska Government,https://www.usa.gov/states/alaska
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/arizona&v=3,,Arizona Government,https://www.usa.gov/states/arizona
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/arkansas&v=3,,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/california&v=3,,California Government,https://www.usa.gov/states/california
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/colorado&v=3,,Colorado Government,https://www.usa.gov/states/colorado
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/connecticut&v=3,,Connecticut Government,https://www.usa.gov/states/connecticut
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/delaware&v=3,,Delaware Government,https://www.usa.gov/states/delaware
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/florida&v=3,,Florida Government,https://www.usa.gov/states/florida
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/georgia&v=3,,Georgia Government,https://www.usa.gov/states/georgia
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/hawaii&v=3,,Hawaii Government,https://www.usa.gov/states/hawaii
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/idaho&v=3,,Idaho Government,https://www.usa.gov/states/idaho
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/illinois&v=3,,Illinois Government,https://www.usa.gov/states/illinois
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/indiana&v=3,,Indiana Government,https://www.usa.gov/states/indiana
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/iowa&v=3,,Iowa Government,https://www.usa.gov/states/iowa
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/kansas&v=3,,Kansas Government,https://www.usa.gov/states/kansas
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/kentucky&v=3,,Kentucky Government,https://www.usa.gov/states/kentucky
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/louisiana&v=3,,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/maine&v=3,,Maine Government,https://www.usa.gov/states/maine
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/maryland&v=3,,Maryland Government,https://www.usa.gov/states/maryland
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/massachusetts&v=3,,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/michigan&v=3,,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/minnesota&v=3,,Minnesota Government,https://www.usa.gov/states/minnesota
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/mississippi&v=3,,Mississippi Government,https://www.usa.gov/states/mississippi
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/missouri&v=3,,Missouri Government,https://www.usa.gov/states/missouri
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/montana&v=3,,Montana Government,https://www.usa.gov/states/montana
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/nebraska&v=3,,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/nevada&v=3,,Nevada Government,https://www.usa.gov/states/nevada
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/new-jersey&v=3,,New-Jersey Government,https://www.usa.gov/states/new-jersey
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/new-mexico&v=3,,New-Mexico Government,https://www.usa.gov/states/new-mexico
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/new-york&v=3,,New-York Government,https://www.usa.gov/states/new-york
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/north-carolina&v=3,,North-Carolina Government,https://www.usa.gov/states/north-carolina
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/north-dakota&v=3,,North-Dakota Government,https://www.usa.gov/states/north-dakota
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/ohio&v=3,,Ohio Government,https://www.usa.gov/states/ohio
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/oklahoma&v=3,,Oklahoma Government,https://www.usa.gov/states/oklahoma
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/oregon&v=3,,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/pennsylvania&v=3,,Pennsylvania Government,https://www.usa.gov/states/pennsylvania
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/south-carolina&v=3,,South-Carolina Government,https://www.usa.gov/states/south-carolina
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/south-dakota&v=3,,South-Dakota Government,https://www.usa.gov/states/south-dakota
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/tennessee&v=3,,Tennessee Government,https://www.usa.gov/states/tennessee
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/texas&v=3,,Texas Government,https://www.usa.gov/states/texas
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/utah&v=3,,Utah Government,https://www.usa.gov/states/utah
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/vermont&v=3,,Vermont Government,https://www.usa.gov/states/vermont
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/virginia&v=3,,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/washington&v=3,,Washington Government,https://www.usa.gov/states/washington
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/west-virginia&v=3,,West-Virginia Government,https://www.usa.gov/states/west-virginia
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/wisconsin&v=3,,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State Government,www.facebook.com,https://www.facebook.com/sharer/sharer.php?u=https://www.usa.gov/states/wyoming&v=3,,Wyoming Government,https://www.usa.gov/states/wyoming
+State Government,www.floridahealth.gov,https://www.floridahealth.gov/,Department of Health,Florida Government,https://www.usa.gov/states/florida
+State Government,www.governor.state.nm.us,https://www.governor.state.nm.us/,New Mexico (NM),State Governors,https://www.usa.gov/state-governor
+State Government,www.governor.state.nm.us,https://www.governor.state.nm.us/contact-the-governor/,Contact Governor Lujan Grisham,New-Mexico Government,https://www.usa.gov/states/new-mexico
+State Government,www.governor.virginia.gov,https://www.governor.virginia.gov/,Virginia (VA),State Governors,https://www.usa.gov/state-governor
+State Government,www.governor.virginia.gov,https://www.governor.virginia.gov/communicating-with-the-governors-office/,Contact Governor Youngkin,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.healthvermont.gov,https://www.healthvermont.gov/,Department of Health,Vermont Government,https://www.usa.gov/states/vermont
+State Government,www.healthy.arkansas.gov,https://www.healthy.arkansas.gov/,Department of Health,Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.hhs.texas.gov,https://www.hhs.texas.gov/,Health and Human Services,Texas Government,https://www.usa.gov/states/texas
+State Government,www.idaho.gov,https://www.idaho.gov/,Idaho,Idaho Government,https://www.usa.gov/states/idaho
+State Government,www.idoc.idaho.gov,https://www.idoc.idaho.gov/,Department of Correction,Idaho Government,https://www.usa.gov/states/idaho
+State Government,www.illinois.gov,https://www.illinois.gov/,Illinois,Illinois Government,https://www.usa.gov/states/illinois
+State Government,www.illinoisattorneygeneral.gov,https://www.illinoisattorneygeneral.gov/,Illinois (IL),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.iowa.gov,https://www.iowa.gov/,Iowa,Iowa Government,https://www.usa.gov/states/iowa
+State Government,www.iowaattorneygeneral.gov,https://www.iowaattorneygeneral.gov/,Iowa (IA),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.iowaattorneygeneral.gov,https://www.iowaattorneygeneral.gov/about-us/divisions/consumer-protection,Consumer Protection Division,Iowa Government,https://www.usa.gov/states/iowa
+State Government,www.kansastag.gov,https://www.kansastag.gov/101/KDEM,Division of Emergency Management,Kansas Government,https://www.usa.gov/states/kansas
+State Government,www.kentucky.gov,https://www.kentucky.gov/Pages/home.aspx,Kentucky,Kentucky Government,https://www.usa.gov/states/kentucky
+State Government,www.law.alaska.gov,https://www.law.alaska.gov/department/civil/consumer/cpindex.html,Consumer Protection Unit,Alaska Government,https://www.usa.gov/states/alaska
+State Government,www.law.alaska.gov,https://www.law.alaska.gov/department/about.html#dao,District Attorneys,Alaska Government,https://www.usa.gov/states/alaska
+State Government,www.louisiana.gov,https://www.louisiana.gov/,Louisiana,Louisiana Government,https://www.usa.gov/states/louisiana
+State Government,www.maine.gov,https://www.maine.gov/governor/mills/,Maine (ME),State Governors,https://www.usa.gov/state-governor
+State Government,www.maine.gov,https://www.maine.gov/ag/index.shtml,Maine (ME),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.maine.gov,https://www.maine.gov/portal/index.html,Maine,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/governor/mills/contact,Contact Governor Mills,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/dacf/,"Department of Agriculture, Conservation and Forestry",Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/dhhs/programs-services/human-services,Child and Family Services,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/ag/consumer/index.shtml,Consumer Protection,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/corrections/,Department of Corrections,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/doe/home,Department of Education,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/sos/cec/elec/index.html,Elections and Voting,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/mema/,Emergency Management Agency,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/dhhs/programs-services/health-prevention-services,Health and Prevention Services,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maine.gov,https://www.maine.gov/sos/bmv/,Motor Vehicles,Maine Government,https://www.usa.gov/states/maine
+State Government,www.maryland.gov,https://www.maryland.gov/Pages/default.aspx,Maryland,Maryland Government,https://www.usa.gov/states/maryland
+State Government,www.marylandattorneygeneral.gov,https://www.marylandattorneygeneral.gov/,Maryland (MD),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.marylandattorneygeneral.gov,https://www.marylandattorneygeneral.gov/Pages/CPD/default.aspx,Consumer Protection Division,Maryland Government,https://www.usa.gov/states/maryland
+State Government,www.mass.gov,https://www.mass.gov/orgs/massachusetts-department-of-agricultural-resources,Department of Agricultural Resources,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,www.mass.gov,https://www.mass.gov/orgs/massachusetts-department-of-correction,Department of Correction,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,www.mass.gov,https://www.mass.gov/orgs/massachusetts-emergency-management-agency,Emergency Management Agency,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,www.mass.gov,https://www.mass.gov/orgs/massachusetts-registry-of-motor-vehicles,Motor Vehicles,Massachusetts Government,https://www.usa.gov/states/massachusetts
+State Government,www.michigan.gov,https://www.michigan.gov/whitmer,Michigan (MI),State Governors,https://www.usa.gov/state-governor
+State Government,www.michigan.gov,https://www.michigan.gov/ag/,Michigan (MI),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.michigan.gov,https://www.michigan.gov/som,Michigan,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/whitmer/contact,Contact Governor Whitmer,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/mdard,Department of Agriculture & Rural Development,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/mdhhs/adult-child-serv,Adult and Children's Services,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/consumerprotection,Consumer Protection,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/corrections/,Department of Corrections,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/mde,Department of Education,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/sos/elections,Elections,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/msp/divisions/emhsd,Emergency Management & Homeland Security,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/mdhhs/keep-mi-healthy,Health Services,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.michigan.gov,https://www.michigan.gov/sos,Motor Vehicles,Michigan Government,https://www.usa.gov/states/michigan
+State Government,www.nebraska.gov,https://www.nebraska.gov/,Nebraska,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,www.nebraska.gov,https://www.nebraska.gov/featured/elections-voting/,Elections and Voting,Nebraska Government,https://www.usa.gov/states/nebraska
+State Government,www.ohioattorneygeneral.gov,https://www.ohioattorneygeneral.gov/,Ohio (OH),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.ohioattorneygeneral.gov,https://www.ohioattorneygeneral.gov/about-ag/service-divisions/consumer-protection,Consumer Protection,Ohio Government,https://www.usa.gov/states/ohio
+State Government,www.oregon.gov,https://www.oregon.gov/gov/Pages/index.aspx,Oregon (OR),State Governors,https://www.usa.gov/state-governor
+State Government,www.oregon.gov,https://www.oregon.gov/pages/index.aspx,Oregon,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/gov/pages/contact-us.aspx,Contact Governor Kotek,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/oda/Pages/default.aspx,Department of Agriculture,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/odhs/pages/default.aspx,Department of Human Services,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/doc/pages/default.aspx,Department of Corrections,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/ode/Pages/default.aspx,Department of Education,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/OEM/Pages/default.aspx,Department of Emergency Management,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/OHA/PH/Pages/index.aspx,Public Health Division,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.oregon.gov,https://www.oregon.gov/odot/DMV/Pages/index.aspx,Motor Vehicles,Oregon Government,https://www.usa.gov/states/oregon
+State Government,www.revenue.alabama.gov,https://www.revenue.alabama.gov/division/motor-vehicle/,Motor Vehicles,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.sde.idaho.gov,https://www.sde.idaho.gov/,Department of Education,Idaho Government,https://www.usa.gov/states/idaho
+State Government,www.sos.alabama.gov,https://www.sos.alabama.gov/alabama-votes,Official Election Center,Alabama Government,https://www.usa.gov/states/alabama
+State Government,www.sos.arkansas.gov,https://www.sos.arkansas.gov/elections,"Elections, Secretary of State",Arkansas Government,https://www.usa.gov/states/arkansas
+State Government,www.state.gov,https://www.state.gov/bureaus-offices/under-secretary-for-arms-control-and-international-security-affairs/,Arms Control and International Security,Federal Agencies,https://www.usa.gov/federal-agencies
+State Government,www.tdcj.texas.gov,https://www.tdcj.texas.gov/,Department of Criminal Justice,Texas Government,https://www.usa.gov/states/texas
+State Government,www.tdem.texas.gov,https://www.tdem.texas.gov/,Disaster Preparedness,Texas Government,https://www.usa.gov/states/texas
+State Government,www.texas.gov,https://www.texas.gov/,Texas,Texas Government,https://www.usa.gov/states/texas
+State Government,www.texasagriculture.gov,https://www.texasagriculture.gov/,Department of Agriculture,Texas Government,https://www.usa.gov/states/texas
+State Government,www.texasattorneygeneral.gov,https://www.texasattorneygeneral.gov/,Texas (TX),State Attorneys General,https://www.usa.gov/state-attorney-general
+State Government,www.texasattorneygeneral.gov,https://www.texasattorneygeneral.gov/consumer-protection,Consumer Protection,Texas Government,https://www.usa.gov/states/texas
+State Government,www.tn.gov,https://www.tn.gov/attorneygeneral/working-for-tennessee/consumer-affairs.html,Division of Consumer Affairs,Tennessee Government,https://www.usa.gov/states/tennessee
+State Government,www.utah.gov,https://www.utah.gov/index.html,Utah,Utah Government,https://www.usa.gov/states/utah
+State Government,www.utah.gov,https://www.utah.gov/education/,Education,Utah Government,https://www.usa.gov/states/utah
+State Government,www.vdacs.virginia.gov,https://www.vdacs.virginia.gov/,Department of Agriculture and Consumer Services,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.vdh.virginia.gov,https://www.vdh.virginia.gov/,Department of Health,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.vermont.gov,https://www.vermont.gov/,Vermont,Vermont Government,https://www.usa.gov/states/vermont
+State Government,www.virginia.gov,https://www.virginia.gov/,Virginia,Virginia Government,https://www.usa.gov/states/virginia
+State Government,www.wisconsin.gov,https://www.wisconsin.gov/Pages/Home.aspx,Wisconsin,Wisconsin Government,https://www.usa.gov/states/wisconsin
+State: District-Of-Columbia,dc.gov,https://dc.gov/,"District of Columbia (Washington, DC)",District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
+State: District-Of-Columbia,dcforms.dc.gov,https://dcforms.dc.gov/webform/executive-office-mayor-ask-mayor,Contact Mayor Bowser,District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
+State: District-Of-Columbia,dhs.dc.gov,https://dhs.dc.gov/,Department of Human Services,District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
+State: District-Of-Columbia,doc.dc.gov,https://doc.dc.gov/,Department of Corrections,District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
+State: District-Of-Columbia,oag.dc.gov,https://oag.dc.gov/consumer-protection,Consumer Protection,District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
+State: District-Of-Columbia,osse.dc.gov,https://osse.dc.gov/,Office of the State Superintendent for Education,District-Of-Columbia Government,https://www.usa.gov/states/district-of-columbia
