@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\Stuart\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\botasaurus\browser_decorator.py", line 201, in run_task
+    result = func(driver, data)
+             ^^^^^^^^^^^^^^^^^^
+TypeError: DeepCrawlerAgent.crawl_for_emails() missing 1 required positional argument: 'url'
