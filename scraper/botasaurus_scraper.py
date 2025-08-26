@@ -29,6 +29,10 @@ class AgencyIndexScraper:
         """
         Parse a specific alphabetical section of the agency index.
         
+        NOTE: The USA.gov agency index structure has changed. Instead of sections with IDs A-Z,
+        agencies are now organized as H2 headers. This method is kept for backward compatibility
+        but now delegates to parse_all_agencies and filters by section.
+        
         Args:
             soup: BeautifulSoup object of the page
             section_id: Single letter ID of the section (A-Z)
@@ -36,75 +40,95 @@ class AgencyIndexScraper:
         Returns:
             List of agency dictionaries with name, URL, and parent department
         """
-        section = soup.find('section', {'id': section_id})
+        # Parse all agencies using the new method and filter by section
+        all_agencies = AgencyIndexScraper.parse_all_agencies(soup)
+        section_agencies = [agency for agency in all_agencies if agency.get('section') == section_id]
+        return section_agencies
+    
+    @staticmethod
+    def parse_all_agencies(soup: BeautifulSoup) -> List[Dict[str, Any]]:
+        """
+        Parse all agencies from the USA.gov agency index using the correct HTML structure.
+        
+        The page structure uses H2 headers for each agency, with the first link in the 
+        following element being the main agency website.
+        
+        Args:
+            soup: BeautifulSoup object of the page
+            
+        Returns:
+            List of agency dictionaries with name, URL, and section
+        """
+        # Find the main content area
+        main_content = soup.find('main') or soup.find('div', class_='usa-grid') or soup.find('div', class_='usa-layout-docs-main_content')
+        
+        if not main_content:
+            return []
+        
+        # Find all H2 headers - each represents an agency
+        agency_headers = main_content.find_all('h2')
+        
         agencies = []
+        current_section_letter = None
         
-        if not section:
-            return agencies
-        
-        # Check for different possible structures
-        # Structure 1: Direct links in the section
-        direct_links = section.find_all('a', href=True)
-        
-        # Structure 2: Links within list items
-        list_items = section.find_all('li')
-        
-        # Structure 3: Links within divs with specific classes
-        agency_divs = section.find_all('div', class_=['usa-width-one-third', 'agency-item', 'usa-media-block'])
-        
-        # Try to find parent department information
-        current_parent = None
-        
-        # Process direct links
-        for link in direct_links:
-            # Skip navigation or non-agency links
-            if link.get('href', '').startswith('#') or 'skip' in link.get('class', []):
+        for header in agency_headers:
+            header_text = header.text.strip()
+            
+            # Skip letter headers (single letters A-Z that mark sections)
+            if len(header_text) == 1 and header_text.isalpha() and header_text.isupper():
+                current_section_letter = header_text
                 continue
             
-            # Check if there's a parent heading before this link
-            parent_heading = link.find_previous(['h3', 'h4'])
-            if parent_heading and parent_heading.parent == section:
-                current_parent = parent_heading.text.strip()
+            # Skip non-agency headers like "Have a question?"
+            if len(header_text) < 3:
+                continue
             
-            agency_name = link.text.strip()
-            homepage_url = link.get('href', '')
+            # Find the next element that contains links for this agency
+            next_element = header.find_next_sibling()
             
-            # Skip empty entries
-            if not agency_name or not homepage_url:
+            if not next_element:
+                continue
+            
+            # Look for the main agency website link
+            # The pattern is: first link is usually the main website
+            links = next_element.find_all('a', href=True)
+            
+            if not links:
+                continue
+            
+            # Get the first link which should be the main agency website
+            main_link = links[0]
+            agency_name = header_text
+            homepage_url = main_link.get('href', '')
+            
+            # Skip empty URLs
+            if not homepage_url:
                 continue
             
             # Make URL absolute if it's relative
-            if homepage_url and not homepage_url.startswith(('http://', 'https://')):
+            if not homepage_url.startswith(('http://', 'https://')):
                 homepage_url = urljoin('https://www.usa.gov', homepage_url)
+            
+            # Only include external links (actual agency websites)
+            # Skip internal USA.gov links (these are "More information" links)
+            if homepage_url.startswith('https://www.usa.gov'):
+                continue
+            
+            # Determine the section letter
+            section_letter = current_section_letter
+            if not section_letter and agency_name:
+                section_letter = agency_name[0].upper()
             
             agencies.append({
                 'agency_name': agency_name,
                 'homepage_url': homepage_url,
-                'parent_department': current_parent,
-                'section': section_id
+                'parent_department': None,  # This information is not readily available in the new structure
+                'section': section_letter
             })
-        
-        # If we didn't find agencies with direct links, try list items
-        if not agencies and list_items:
-            for item in list_items:
-                link = item.find('a', href=True)
-                if link:
-                    agency_name = link.text.strip()
-                    homepage_url = link.get('href', '')
-                    
-                    if agency_name and homepage_url:
-                        if not homepage_url.startswith(('http://', 'https://')):
-                            homepage_url = urljoin('https://www.usa.gov', homepage_url)
-                        
-                        agencies.append({
-                            'agency_name': agency_name,
-                            'homepage_url': homepage_url,
-                            'parent_department': None,
-                            'section': section_id
-                        })
         
         return agencies
     
+    @staticmethod
     @request(
         # Cache responses to avoid redundant requests
         cache=True,
@@ -113,31 +137,29 @@ class AgencyIndexScraper:
         # Parallel processing for efficiency
         parallel=5
     )
-    def scrape_section(self, section_id: str, request: BotasaurusRequest) -> Dict[str, Any]:
+    def scrape_section(request: BotasaurusRequest, section_id: str) -> Dict[str, Any]:
         """
         Scrape a single alphabetical section.
         
         Args:
-            section_id: Single letter ID (A-Z)
             request: Botasaurus request object
+            section_id: Single letter ID (A-Z)
             
         Returns:
             Dictionary with section data and agencies
         """
         try:
             # Get the page HTML
-            response = request.get(self.base_url)
-            soup = response.soup
+            base_url = "https://www.usa.gov/agency-index"
+            response = request.get(base_url)
+            # Parse HTML with BeautifulSoup
+            soup = BeautifulSoup(response.text, 'html.parser')
             
             # Parse the specific section
-            agencies = self.parse_agency_section(soup, section_id)
-            
-            # Update stats
-            self.scraping_stats['sections_scraped'] += 1
-            self.scraping_stats['agencies_found'] += len(agencies)
+            agencies = AgencyIndexScraper.parse_agency_section(soup, section_id)
             
             return {
-                'section': section_id,
+                'section': str(section_id),
                 'success': True,
                 'agency_count': len(agencies),
                 'agencies': agencies
@@ -145,20 +167,20 @@ class AgencyIndexScraper:
             
         except Exception as e:
             error_msg = f"Error scraping section {section_id}: {str(e)}"
-            self.scraping_stats['errors'].append(error_msg)
             
             return {
-                'section': section_id,
+                'section': str(section_id),
                 'success': False,
                 'error': error_msg,
                 'agencies': []
             }
     
+    @staticmethod
     @request(
         cache=True,
         max_retry=3
     )
-    def scrape_agency_index(self, request: BotasaurusRequest) -> Dict[str, Any]:
+    def scrape_agency_index(request: BotasaurusRequest, data: Any = None) -> Dict[str, Any]:
         """
         Scrape the entire USA.gov Agency Index.
         
@@ -169,9 +191,12 @@ class AgencyIndexScraper:
             Dictionary with all agencies and scraping statistics
         """
         try:
+            print("DEBUG: Starting scrape_agency_index")
             # Get the main page
-            response = request.get(self.base_url)
-            soup = response.soup
+            base_url = "https://www.usa.gov/agency-index"
+            response = request.get(base_url)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            print("DEBUG: Got HTML response")
             
             # Find all alphabetical sections (A-Z)
             alphabet_sections = []
@@ -182,37 +207,36 @@ class AgencyIndexScraper:
             
             # Scrape each section
             all_agencies = []
+            scraping_stats = {'sections_scraped': 0, 'agencies_found': 0, 'errors': []}
+            
             for section_id in alphabet_sections:
-                agencies = self.parse_agency_section(soup, section_id)
+                agencies = AgencyIndexScraper.parse_agency_section(soup, section_id)
                 all_agencies.extend(agencies)
                 
                 # Update stats
-                self.scraping_stats['sections_scraped'] += 1
-                self.scraping_stats['agencies_found'] += len(agencies)
+                scraping_stats['sections_scraped'] += 1
+                scraping_stats['agencies_found'] += len(agencies)
                 
                 # Add small delay to be polite
                 time.sleep(0.5)
-            
-            # Store all agencies
-            self.all_agencies = all_agencies
             
             return {
                 'success': True,
                 'total_agencies': len(all_agencies),
                 'sections_found': len(alphabet_sections),
                 'agencies': all_agencies,
-                'stats': self.scraping_stats
+                'stats': scraping_stats
             }
             
         except Exception as e:
             error_msg = f"Error scraping agency index: {str(e)}"
-            self.scraping_stats['errors'].append(error_msg)
+            scraping_stats = {'sections_scraped': 0, 'agencies_found': 0, 'errors': [error_msg]}
             
             return {
                 'success': False,
                 'error': error_msg,
                 'agencies': [],
-                'stats': self.scraping_stats
+                'stats': scraping_stats
             }
     
     @browser(
@@ -248,16 +272,8 @@ class AgencyIndexScraper:
                 # Scrape specific section
                 agencies = self.parse_agency_section(soup, section_id)
             else:
-                # Scrape all sections
-                for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
-                    section_agencies = self.parse_agency_section(soup, letter)
-                    agencies.extend(section_agencies)
-                    
-                    # Scroll to next section for dynamic loading
-                    next_section = soup.find('section', {'id': letter})
-                    if next_section:
-                        driver.scroll_to_element(f'section#{letter}')
-                        time.sleep(0.5)  # Small delay for content to load
+                # Scrape all agencies using the new method
+                agencies = self.parse_all_agencies(soup)
             
             return {
                 'success': True,
@@ -273,6 +289,45 @@ class AgencyIndexScraper:
                 'agencies': [],
                 'method': 'browser'
             }
+    
+    def scrape_section_instance(self, section_id: str) -> Dict[str, Any]:
+        """
+        Instance wrapper for scrape_section static method that updates instance stats.
+        
+        Args:
+            section_id: Single letter ID (A-Z)
+            
+        Returns:
+            Dictionary with section data and agencies
+        """
+        result = self.scrape_section(section_id)
+        
+        # Update instance stats
+        if result['success']:
+            self.scraping_stats['sections_scraped'] += 1
+            self.scraping_stats['agencies_found'] += result['agency_count']
+            # Add agencies to instance storage
+            self.all_agencies.extend(result['agencies'])
+        else:
+            self.scraping_stats['errors'].append(result.get('error', 'Unknown error'))
+        
+        return result
+    
+    def scrape_agency_index_instance(self) -> Dict[str, Any]:
+        """
+        Instance wrapper for scrape_agency_index static method that updates instance data.
+        
+        Returns:
+            Dictionary with all agencies and scraping statistics
+        """
+        result = self.scrape_agency_index()
+        
+        if result['success']:
+            # Update instance data
+            self.all_agencies = result['agencies']
+            self.scraping_stats.update(result['stats'])
+        
+        return result
     
     def get_agencies_by_letter(self, letter: str) -> List[Dict[str, Any]]:
         """
