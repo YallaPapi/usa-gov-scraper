@@ -1,304 +1,354 @@
+#!/usr/bin/env python3
 """
-USA.gov Agency Index Scraper - Botasaurus Desktop Application
-Cross-platform desktop app for scraping federal agencies
+USA.gov Government Agency Scraper - Enhanced Desktop Application
+Cross-platform desktop GUI with progress tracking and live logging
 """
 
-from botasaurus.browser import browser, Driver
-from botasaurus.request import request
+import tkinter as tk
+from tkinter import ttk, scrolledtext, filedialog, messagebox
+import threading
+import queue
 import os
 import json
-import csv
 from datetime import datetime
+from scraper.botasaurus_core import GovernmentAgencyScraper
+import logging
 
 
-# Create the main desktop application
-@browser(
-    # Desktop app settings
-    headless=False,  # Show browser for desktop app
-    profile="usa_gov_scraper",  # Use persistent profile
-    block_images=True,  # Faster loading
-    max_retry=3,
-    output="scraped_data"
-)
-def usa_gov_agency_scraper_desktop(driver: Driver, data=None):
-    """
-    Main Botasaurus Desktop Application for USA.gov Agency Scraper
+class DesktopScraperApp:
+    """Enhanced Desktop GUI for USA.gov Agency Scraper with progress tracking."""
     
-    This is a full-featured desktop application that:
-    1. Scrapes all federal agencies from USA.gov
-    2. Uses Agency Swarm agent patterns
-    3. Dynamically creates helper agents as needed
-    4. Validates and cleans data
-    5. Exports to CSV and JSON
-    """
-    
-    print("\n" + "="*80)
-    print(" " * 20 + "USA.GOV AGENCY INDEX SCRAPER")
-    print(" " * 15 + "Powered by Botasaurus + Agency Swarm")
-    print("="*80)
-    
-    # Initialize tracking
-    orchestration_state = {
-        'start_time': datetime.now(),
-        'agencies': [],
-        'sections_found': [],
-        'sections_completed': [],
-        'dynamic_agents': [],
-        'errors': []
-    }
-    
-    # Navigate to the target page
-    print("\n[🌐] Navigating to USA.gov Agency Index...")
-    driver.get("https://www.usa.gov/agency-index")
-    driver.wait(2)  # Wait for page to load
-    
-    # PHASE 1: PLANNING (Planner Agent)
-    print("\n[📋] PHASE 1: PLANNING")
-    print("    🤖 Planner Agent: Analyzing page structure...")
-    
-    # Get all alphabetical sections
-    sections = []
-    for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
-        try:
-            section_element = driver.get_element_or_none(f"#section-{letter}", wait=1)
-            if not section_element:
-                section_element = driver.get_element_or_none(f"#{letter}", wait=1)
-            
-            if section_element:
-                sections.append(letter)
-                print(f"    ✓ Found section: {letter}")
-        except:
-            # Implementation verified - no action needed
-            pass
-    orchestration_state['sections_found'] = sections
-    print(f"    📊 Total sections identified: {len(sections)}")
-    
-    # PHASE 2: CRAWLING (Crawler Agent)
-    print("\n[🕷️] PHASE 2: CRAWLING")
-    print("    🤖 Crawler Agent: Extracting agency information...")
-    
-    all_agencies = []
-    failed_sections = []
-    
-    for idx, section_id in enumerate(sections, 1):
-        print(f"    [{idx}/{len(sections)}] Processing section {section_id}...", end="")
+    def __init__(self, root):
+        self.root = root
+        self.root.title("USA.gov Government Agency Scraper")
+        self.root.geometry("800x600")
         
+        # Application state
+        self.scraper = None
+        self.is_scraping = False
+        self.output_dir = "scraped_data"
+        
+        # Threading and logging
+        self.log_queue = queue.Queue()
+        self.scraper_thread = None
+        
+        self.setup_ui()
+        self.setup_logging()
+        
+    def setup_ui(self):
+        """Create the user interface."""
+        # Main frame
+        main_frame = ttk.Frame(self.root, padding="10")
+        main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        
+        # Title
+        title_label = ttk.Label(main_frame, text="USA.gov Government Agency Scraper", 
+                               font=('TkDefaultFont', 16, 'bold'))
+        title_label.grid(row=0, column=0, columnspan=3, pady=(0, 20))
+        
+        # Configuration section
+        config_frame = ttk.LabelFrame(main_frame, text="Configuration", padding="10")
+        config_frame.grid(row=1, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
+        
+        # Section selection
+        ttk.Label(config_frame, text="Section:").grid(row=0, column=0, sticky=tk.W)
+        self.section_var = tk.StringVar(value="All")
+        section_combo = ttk.Combobox(config_frame, textvariable=self.section_var, width=10)
+        section_combo['values'] = ['All'] + list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+        section_combo.grid(row=0, column=1, padx=(5, 20))
+        
+        # Output directory
+        ttk.Label(config_frame, text="Output Directory:").grid(row=0, column=2, sticky=tk.W)
+        self.output_var = tk.StringVar(value=self.output_dir)
+        output_entry = ttk.Entry(config_frame, textvariable=self.output_var, width=30)
+        output_entry.grid(row=0, column=3, padx=(5, 5))
+        
+        browse_btn = ttk.Button(config_frame, text="Browse...", command=self.browse_output_dir)
+        browse_btn.grid(row=0, column=4, padx=(5, 0))
+        
+        # Control section
+        control_frame = ttk.Frame(main_frame)
+        control_frame.grid(row=2, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
+        
+        # Start/Stop buttons
+        self.start_btn = ttk.Button(control_frame, text="Start Scraping", 
+                                   command=self.start_scraping, style="Accent.TButton")
+        self.start_btn.grid(row=0, column=0, padx=(0, 10))
+        
+        self.stop_btn = ttk.Button(control_frame, text="Stop", 
+                                  command=self.stop_scraping, state=tk.DISABLED)
+        self.stop_btn.grid(row=0, column=1, padx=(0, 10))
+        
+        self.clear_btn = ttk.Button(control_frame, text="Clear Log", command=self.clear_log)
+        self.clear_btn.grid(row=0, column=2)
+        
+        # Progress section
+        progress_frame = ttk.LabelFrame(main_frame, text="Progress", padding="10")
+        progress_frame.grid(row=3, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
+        
+        # Progress bar
+        self.progress_var = tk.DoubleVar()
+        self.progress_bar = ttk.Progressbar(progress_frame, variable=self.progress_var, 
+                                           maximum=100, length=400)
+        self.progress_bar.grid(row=0, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=(0, 5))
+        
+        # Status labels
+        self.status_label = ttk.Label(progress_frame, text="Ready to start scraping")
+        self.status_label.grid(row=1, column=0, sticky=tk.W)
+        
+        self.count_label = ttk.Label(progress_frame, text="Agencies found: 0")
+        self.count_label.grid(row=1, column=1, sticky=tk.E)
+        
+        # Log section
+        log_frame = ttk.LabelFrame(main_frame, text="Log Output", padding="10")
+        log_frame.grid(row=4, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
+        
+        # Log text area with scrollbar
+        self.log_text = scrolledtext.ScrolledText(log_frame, height=15, width=80)
+        self.log_text.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+        
+        # Results section
+        results_frame = ttk.LabelFrame(main_frame, text="Results", padding="10")
+        results_frame.grid(row=5, column=0, columnspan=3, sticky=(tk.W, tk.E))
+        
+        self.results_label = ttk.Label(results_frame, text="No results yet")
+        self.results_label.grid(row=0, column=0, sticky=tk.W)
+        
+        self.open_folder_btn = ttk.Button(results_frame, text="Open Results Folder", 
+                                         command=self.open_results_folder, state=tk.DISABLED)
+        self.open_folder_btn.grid(row=0, column=1, sticky=tk.E)
+        
+        # Configure grid weights
+        self.root.columnconfigure(0, weight=1)
+        self.root.rowconfigure(0, weight=1)
+        main_frame.columnconfigure(0, weight=1)
+        main_frame.rowconfigure(4, weight=1)
+        config_frame.columnconfigure(3, weight=1)
+        progress_frame.columnconfigure(0, weight=1)
+        log_frame.columnconfigure(0, weight=1)
+        log_frame.rowconfigure(0, weight=1)
+        results_frame.columnconfigure(0, weight=1)
+        
+    def setup_logging(self):
+        """Set up logging to capture scraper output."""
+        # Create custom handler that sends logs to queue
+        class QueueHandler(logging.Handler):
+            def __init__(self, queue):
+                super().__init__()
+                self.queue = queue
+            
+            def emit(self, record):
+                self.queue.put(self.format(record))
+        
+        # Set up logger
+        logger = logging.getLogger('usa_gov_scraper')
+        logger.setLevel(logging.INFO)
+        
+        # Add queue handler
+        queue_handler = QueueHandler(self.log_queue)
+        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        queue_handler.setFormatter(formatter)
+        logger.addHandler(queue_handler)
+        
+        # Start log processing
+        self.process_log_queue()
+        
+    def process_log_queue(self):
+        """Process log messages from the queue and display them."""
         try:
-            # Scroll to section to ensure it's loaded
-            driver.execute_script(f"document.getElementById('{section_id}').scrollIntoView();")
-            driver.wait(0.5)
+            while True:
+                message = self.log_queue.get_nowait()
+                self.log_text.insert(tk.END, message + '\n')
+                self.log_text.see(tk.END)
+        except queue.Empty:
+            pass
+        
+        # Schedule next check
+        self.root.after(100, self.process_log_queue)
+        
+    def browse_output_dir(self):
+        """Browse for output directory."""
+        directory = filedialog.askdirectory(initialdir=self.output_var.get())
+        if directory:
+            self.output_var.set(directory)
+            self.output_dir = directory
             
-            # Get all links in this section
-            section_selector = f"#{section_id}"
-            links = driver.get_elements_or_none(f"{section_selector} a", wait=2)
+    def clear_log(self):
+        """Clear the log text area."""
+        self.log_text.delete(1.0, tk.END)
+        
+    def update_progress(self, current, total, message=""):
+        """Update progress bar and status."""
+        if total > 0:
+            progress = (current / total) * 100
+            self.progress_var.set(progress)
+        
+        if message:
+            self.status_label.config(text=message)
             
-            if not links:
-                # Try alternative selector
-                links = driver.get_elements_or_none(f"section#{section_id} a", wait=2)
+    def update_count(self, count):
+        """Update agency count display."""
+        self.count_label.config(text=f"Agencies found: {count}")
+        
+    def start_scraping(self):
+        """Start the scraping process in a separate thread."""
+        if self.is_scraping:
+            return
             
-            section_agencies = []
+        self.is_scraping = True
+        self.start_btn.config(state=tk.DISABLED)
+        self.stop_btn.config(state=tk.NORMAL)
+        self.open_folder_btn.config(state=tk.DISABLED)
+        
+        # Get configuration
+        section = self.section_var.get()
+        if section == "All":
+            section = None
             
-            if links:
-                for link in links:
-                    try:
-                        text = link.text.strip()
-                        href = link.get_attribute('href')
-                        
-                        if text and href and not href.startswith('#'):
-                            # Make URL absolute
-                            if not href.startswith(('http://', 'https://')):
-                                href = f"https://www.usa.gov{href}" if href.startswith('/') else f"https://{href}"
-                            
-                            agency = {
-                                'agency_name': text,
-                                'homepage_url': href,
-                                'section': section_id,
-                                'parent_department': None  # Will be filled if available
-                            }
-                            section_agencies.append(agency)
-                    except:
-                        continue
+        self.output_dir = self.output_var.get()
+        
+        # Start scraping thread
+        self.scraper_thread = threading.Thread(
+            target=self.scrape_worker, 
+            args=(section,),
+            daemon=True
+        )
+        self.scraper_thread.start()
+        
+    def stop_scraping(self):
+        """Stop the scraping process."""
+        self.is_scraping = False
+        self.start_btn.config(state=tk.NORMAL)
+        self.stop_btn.config(state=tk.DISABLED)
+        self.update_progress(0, 1, "Stopped by user")
+        
+    def scrape_worker(self, section):
+        """Worker function for scraping in separate thread."""
+        try:
+            logger = logging.getLogger('usa_gov_scraper')
+            logger.info("Starting USA.gov Agency Scraper Desktop Application")
             
-            all_agencies.extend(section_agencies)
-            orchestration_state['sections_completed'].append(section_id)
-            print(f" ✓ ({len(section_agencies)} agencies)")
+            # Initialize scraper
+            scraper = GovernmentAgencyScraper(rate_limit=0.5, max_retries=3)
+            
+            self.update_progress(0, 26 if not section else 1, "Initializing scraper...")
+            
+            if section:
+                # Scrape specific section
+                logger.info(f"Scraping section: {section}")
+                self.update_progress(0, 1, f"Scraping section {section}...")
+                
+                result = scraper.scrape_section(section)
+                
+                if result['success']:
+                    agencies = result['agencies']
+                    self.update_count(len(agencies))
+                    self.update_progress(1, 1, "Section scraping completed")
+                else:
+                    logger.error(f"Failed to scrape section {section}")
+                    self.scraping_finished(False)
+                    return
+            else:
+                # Scrape all sections
+                logger.info("Scraping all sections A-Z")
+                self.update_progress(0, 26, "Starting comprehensive scrape...")
+                
+                result = scraper.scrape_all_sections()
+                
+                if result['success']:
+                    agencies = result['agencies']
+                    stats = result['statistics']
+                    self.update_count(len(agencies))
+                    self.update_progress(26, 26, f"Scraping completed in {stats['duration_seconds']:.1f}s")
+                    logger.info(f"Found {len(agencies)} agencies across {stats['sections_scraped']} sections")
+                else:
+                    logger.error("Failed to scrape agencies")
+                    self.scraping_finished(False)
+                    return
+            
+            # Validate data
+            logger.info("Validating scraped data...")
+            self.update_progress(26, 30, "Validating data...")
+            
+            validation = scraper.validate_data(agencies)
+            logger.info(f"Validation: {validation['valid_agencies']}/{validation['total_agencies']} valid agencies")
+            
+            if not validation['validation_passed']:
+                logger.warning(f"Found {len(validation['issues'])} validation issues")
+                for issue in validation['issues'][:3]:
+                    logger.warning(f"  - {issue}")
+            
+            # Export data
+            logger.info("Exporting data to files...")
+            self.update_progress(28, 30, "Exporting data...")
+            
+            os.makedirs(self.output_dir, exist_ok=True)
+            export_paths = scraper.export_data(agencies, self.output_dir)
+            
+            logger.info("Export completed:")
+            logger.info(f"  CSV: {export_paths['csv']}")
+            logger.info(f"  JSON: {export_paths['json']}")
+            
+            self.update_progress(30, 30, "Export completed successfully")
+            
+            # Update results display
+            result_text = f"Successfully scraped {len(agencies)} agencies. Files saved to {self.output_dir}"
+            self.results_label.config(text=result_text)
+            self.open_folder_btn.config(state=tk.NORMAL)
+            
+            logger.info("Scraping process completed successfully!")
+            self.scraping_finished(True, export_paths)
             
         except Exception as e:
-            failed_sections.append(section_id)
-            orchestration_state['errors'].append(f"Section {section_id}: {str(e)}")
-            print(f" ✗ (error)")
-    
-    orchestration_state['agencies'] = all_agencies
-    print(f"\n    📊 Total agencies scraped: {len(all_agencies)}")
-    
-    # Handle failed sections with Retry Agent
-    if failed_sections:
-        print(f"\n    [🔄] Creating Retry Handler Agent...")
-        orchestration_state['dynamic_agents'].append('RetryHandlerAgent')
-        
-        for section_id in failed_sections:
-            print(f"        Retrying section {section_id}...", end="")
-            driver.wait(2)  # Backoff
+            logger.error(f"Unexpected error: {str(e)}", exc_info=True)
+            self.scraping_finished(False)
             
-            try:
-                # Retry scraping
-                driver.execute_script(f"document.getElementById('{section_id}').scrollIntoView();")
-                links = driver.get_elements_or_none(f"#{section_id} a", wait=3)
-                
-                retry_agencies = []
-                if links:
-                    for link in links:
-                        try:
-                            text = link.text.strip()
-                            href = link.get_attribute('href')
-                            if text and href and not href.startswith('#'):
-                                if not href.startswith(('http://', 'https://')):
-                                    href = f"https://www.usa.gov{href}" if href.startswith('/') else f"https://{href}"
-                                retry_agencies.append({
-                                    'agency_name': text,
-                                    'homepage_url': href,
-                                    'section': section_id,
-                                    'parent_department': None
-                                })
-                        except:
-                            continue
-                
-                all_agencies.extend(retry_agencies)
-                print(f" ✓ ({len(retry_agencies)} agencies)")
-            except:
-                print(f" ✗ (failed again)")
-    
-    # PHASE 3: VALIDATION (Validator Agent)
-    print("\n[✅] PHASE 3: VALIDATION")
-    print("    🤖 Validator Agent: Ensuring data quality...")
-    
-    valid_agencies = []
-    invalid_count = 0
-    
-    for agency in all_agencies:
-        if agency.get('agency_name') and agency.get('homepage_url'):
-            valid_agencies.append(agency)
+    def scraping_finished(self, success, export_paths=None):
+        """Handle scraping completion."""
+        self.is_scraping = False
+        self.start_btn.config(state=tk.NORMAL)
+        self.stop_btn.config(state=tk.DISABLED)
+        
+        if success:
+            messagebox.showinfo("Success", "Scraping completed successfully!")
+            if export_paths:
+                self.open_folder_btn.config(state=tk.NORMAL)
         else:
-            invalid_count += 1
-    
-    print(f"    ✓ Valid agencies: {len(valid_agencies)}")
-    print(f"    ✗ Invalid records: {invalid_count}")
-    
-    # Check for URL issues - create URL Normalizer if needed
-    url_issues = sum(1 for a in valid_agencies if not a['homepage_url'].startswith(('http://', 'https://')))
-    if url_issues > 0:
-        print(f"\n    [🔧] Creating URL Normalizer Agent...")
-        orchestration_state['dynamic_agents'].append('URLNormalizerAgent')
-        
-        for agency in valid_agencies:
-            url = agency['homepage_url']
-            if not url.startswith(('http://', 'https://')):
-                agency['homepage_url'] = f"https://{url}"
-        
-        print(f"        ✓ Normalized {url_issues} URLs")
-    
-    # Check for duplicates - create Deduplicator if needed
-    unique_urls = set()
-    duplicates = []
-    
-    for agency in valid_agencies:
-        url = agency['homepage_url']
-        if url in unique_urls:
-            duplicates.append(agency)
-        else:
-            unique_urls.add(url)
-    
-    if duplicates:
-        print(f"\n    [🧹] Creating Deduplicator Agent...")
-        orchestration_state['dynamic_agents'].append('DeduplicatorAgent')
-        
-        # Remove duplicates
-        unique_agencies = []
-        seen_urls = set()
-        
-        for agency in valid_agencies:
-            if agency['homepage_url'] not in seen_urls:
-                seen_urls.add(agency['homepage_url'])
-                unique_agencies.append(agency)
-        
-        print(f"        ✓ Removed {len(duplicates)} duplicates")
-        valid_agencies = unique_agencies
-    
-    # PHASE 4: EXPORT (Exporter Agent)
-    print("\n[💾] PHASE 4: EXPORT")
-    print("    🤖 Exporter Agent: Saving data to files...")
-    
-    # Create output directory
-    os.makedirs("scraped_data", exist_ok=True)
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    
-    # Export to CSV
-    csv_filename = f"scraped_data/usa_gov_agencies_{timestamp}.csv"
-    with open(csv_filename, 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['agency_name', 'homepage_url', 'parent_department', 'section']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(valid_agencies)
-    
-    print(f"    ✓ CSV: {csv_filename}")
-    
-    # Export to JSON
-    json_filename = f"scraped_data/usa_gov_agencies_{timestamp}.json"
-    with open(json_filename, 'w', encoding='utf-8') as jsonfile:
-        json.dump(valid_agencies, jsonfile, indent=2, ensure_ascii=False)
-    
-    print(f"    ✓ JSON: {json_filename}")
-    
-    # Create Logger Agent for final statistics
-    print(f"\n    [📊] Creating Logger Agent...")
-    orchestration_state['dynamic_agents'].append('LoggerAgent')
-    
-    # Calculate duration
-    orchestration_state['end_time'] = datetime.now()
-    duration = (orchestration_state['end_time'] - orchestration_state['start_time']).total_seconds()
-    
-    # FINAL SUMMARY
-    print("\n" + "="*80)
-    print(" " * 25 + "SCRAPING COMPLETE!")
-    print("="*80)
-    print(f"\n📊 STATISTICS:")
-    print(f"    • Sections Found: {len(orchestration_state['sections_found'])}")
-    print(f"    • Sections Completed: {len(orchestration_state['sections_completed'])}")
-    print(f"    • Total Agencies: {len(all_agencies)}")
-    print(f"    • Valid Agencies: {len(valid_agencies)}")
-    print(f"    • Duration: {duration:.2f} seconds")
-    
-    print(f"\n🤖 DYNAMIC AGENTS CREATED: {len(orchestration_state['dynamic_agents'])}")
-    for agent in orchestration_state['dynamic_agents']:
-        print(f"    • {agent}")
-    
-    print(f"\n📁 OUTPUT FILES:")
-    print(f"    • CSV: {csv_filename}")
-    print(f"    • JSON: {json_filename}")
-    
-    if orchestration_state['errors']:
-        print(f"\n⚠️ ERRORS: {len(orchestration_state['errors'])}")
-        for error in orchestration_state['errors'][:3]:
-            print(f"    • {error}")
-    
-    print("\n" + "="*80)
-    print(" " * 15 + "Thank you for using USA.gov Agency Scraper!")
-    print("="*80 + "\n")
-    
-    return {
-        'success': True,
-        'agencies': valid_agencies,
-        'count': len(valid_agencies),
-        'files': {
-            'csv': csv_filename,
-            'json': json_filename
-        },
-        'dynamic_agents': orchestration_state['dynamic_agents'],
-        'duration': duration
-    }
+            messagebox.showerror("Error", "Scraping failed. Check the log for details.")
+            
+    def open_results_folder(self):
+        """Open the results folder in file explorer."""
+        try:
+            os.startfile(self.output_dir)
+        except AttributeError:
+            # For non-Windows systems
+            import subprocess
+            subprocess.call(['xdg-open', self.output_dir])
 
 
-# Run the desktop app
+def main():
+    """Main entry point for desktop application."""
+    root = tk.Tk()
+    
+    # Set application icon and style
+    try:
+        root.tk.call('source', os.path.join(os.path.dirname(__file__), 'theme', 'forest-light.tcl'))
+        ttk.Style().theme_use('forest-light')
+    except:
+        pass  # Use default theme if custom theme not available
+    
+    app = DesktopScraperApp(root)
+    
+    # Center window on screen
+    root.update_idletasks()
+    width = root.winfo_width()
+    height = root.winfo_height()
+    x = (root.winfo_screenwidth() // 2) - (width // 2)
+    y = (root.winfo_screenheight() // 2) - (height // 2)
+    root.geometry(f'{width}x{height}+{x}+{y}')
+    
+    root.mainloop()
+
+
 if __name__ == "__main__":
-    # This launches the Botasaurus Desktop Application
-    usa_gov_agency_scraper_desktop()
+    main()

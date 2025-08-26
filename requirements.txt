@@ -1,23 +1,25 @@
-# USA.gov Agency Index Scraper Requirements
+# USA.gov Government Agency Scraper - Clean Dependencies
+# Core dependencies pinned for stability
 
-# Core Dependencies
+# Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Advanced Web Scraping
 botasaurus>=4.0.0
-agency-swarm>=1.0.0
-beautifulsoup4>=4.12.0
-requests>=2.31.0
-python-dotenv>=1.0.0
 
 # Data Processing
-pandas>=2.0.0
-lxml>=4.9.0
+pandas==2.1.4
 
 # Utilities
-pydantic>=2.0.0
-typing-extensions>=4.0.0
+python-dotenv==1.0.0
 
-# OpenAI (for Agency Swarm)
+# Testing
+pytest==7.4.3
+pytest-mock==3.12.0
+
+# Agency Swarm orchestration (requires OpenAI API key)
+agency-swarm>=1.0.0
 openai>=1.0.0
-
-# Optional: For advanced features
-# selenium>=4.0.0  # If using browser automation
-# playwright>=1.30.0  # Alternative to Selenium
+pydantic>=2.0.0
