@@ -15,6 +15,10 @@ Usage examples:
   # Discover from existing DB websites at specific level
   python scripts/discover_gov_sites.py --db government_contacts.db \
       --from-level federal --limit 100
+  
+  # Multi-hop discovery from agencies CSV (two hops)
+  python scripts/discover_gov_sites.py --db government_contacts.db \
+      --agencies-csv output_clean/usa_gov_agencies_*.csv --limit 100 --hops 2
 """
 
 import argparse
@@ -153,54 +157,63 @@ def main():
     parser.add_argument('--db', required=True, help='Path to SQLite DB')
     parser.add_argument('--agencies-csv', nargs='*', help='CSV glob(s) for seed agency lists')
     parser.add_argument('--from-level', choices=['federal', 'state', 'county', 'city', 'local'], help='Use existing DB websites at this level as seeds')
-    parser.add_argument('--limit', type=int, default=100, help='Max seed pages to fetch')
+    parser.add_argument('--limit', type=int, default=100, help='Max seed pages to fetch per hop')
     parser.add_argument('--delay', type=float, default=0.5, help='Delay between requests (seconds)')
     parser.add_argument('--default-level', default='local', help='Level to assign to newly discovered sites (default: local)')
+    parser.add_argument('--hops', type=int, default=1, help='Number of discovery hops (>=1)')
     args = parser.parse_args()
 
     conn = sqlite3.connect(args.db)
     try:
-        # Build list of seed URLs
-        seeds: list[str] = []
-        if args.agencies_csv:
-            for url in iter_agency_urls_from_csv(args.agencies_csv):
-                seeds.append(url)
-                if len(seeds) >= args.limit:
-                    break
-        elif args.from_level:
-            seeds.extend(list(iter_urls_from_db(conn, args.from_level, args.limit)))
-        else:
-            print('Provide either --agencies-csv or --from-level seeds')
-            return
+        # Build initial seeds
+        def build_seeds_from_args() -> list[str]:
+            seeds: list[str] = []
+            if args.agencies_csv:
+                for url in iter_agency_urls_from_csv(args.agencies_csv):
+                    seeds.append(url)
+                    if len(seeds) >= args.limit:
+                        break
+            elif args.from_level:
+                seeds.extend(list(iter_urls_from_db(conn, args.from_level, args.limit)))
+            else:
+                print('Provide either --agencies-csv or --from-level seeds')
+            return seeds
 
-        print(f"Fetching {len(seeds)} seed pages for discovery…")
-        discovered_domains: Set[str] = set()
-        for i, url in enumerate(seeds, 1):
-            html = fetch_html(url)
-            if not html:
-                continue
-            domains = extract_gov_links(url, html)
-            discovered_domains.update(domains)
-            # polite delay
-            if args.delay:
-                import time
-                time.sleep(args.delay)
+        discovered_total: Set[str] = set()
+        seeds = build_seeds_from_args()
+        hops = max(1, args.hops)
+        for hop in range(1, hops + 1):
+            if not seeds:
+                break
+            print(f"[Hop {hop}/{hops}] Fetching {len(seeds)} seed pages…")
+            hop_discovered: Set[str] = set()
+            for i, url in enumerate(seeds, 1):
+                html = fetch_html(url)
+                if not html:
+                    continue
+                domains = extract_gov_links(url, html)
+                hop_discovered.update(domains)
+                if args.delay:
+                    import time
+                    time.sleep(args.delay)
+            print(f"[Hop {hop}] Discovered {len(hop_discovered)} domains")
+            # Insert newly discovered domains into DB
+            inserted = 0
+            for domain in sorted(hop_discovered - discovered_total):
+                name = domain
+                jid = upsert_jurisdiction(conn, name=name, level=args.default_level)
+                upsert_website(conn, jurisdiction_id=jid, domain=domain)
+                inserted += 1
+            conn.commit()
+            print(f"[Hop {hop}] Inserted/updated {inserted} websites at level '{args.default_level}'")
+            # Prepare next seeds as full URLs
+            seeds = [f"https://{d}" for d in sorted(hop_discovered - discovered_total)][: args.limit]
+            discovered_total.update(hop_discovered)
 
-        print(f"Discovered {len(discovered_domains)} .gov/.us domains")
-
-        # Upsert into DB as jurisdictions/websites with default level
-        inserted_websites = 0
-        for domain in sorted(discovered_domains):
-            name = domain
-            jid = upsert_jurisdiction(conn, name=name, level=args.default_level)
-            upsert_website(conn, jurisdiction_id=jid, domain=domain)
-            inserted_websites += 1
-        conn.commit()
-        print(f"✅ Inserted/updated {inserted_websites} websites at level '{args.default_level}'")
+        print(f"✅ Discovery complete. Total unique domains discovered: {len(discovered_total)}")
     finally:
         conn.close()
 
 
 if __name__ == '__main__':
     main()
-

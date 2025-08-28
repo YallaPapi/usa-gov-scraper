@@ -8,6 +8,7 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext, filedialog, messagebox
 import threading
 import queue
+import subprocess
 import os
 import json
 from datetime import datetime
@@ -33,6 +34,8 @@ class DesktopScraperApp:
         self.scraper = None
         self.is_scraping = False
         self.output_dir = "scraped_data"
+        self.db_path = os.path.abspath("government_contacts.db")
+        self.api_process = None
         
         # Threading and logging
         self.log_queue = queue.Queue()
@@ -87,10 +90,52 @@ class DesktopScraperApp:
         
         self.clear_btn = ttk.Button(control_frame, text="Clear Log", command=self.clear_log)
         self.clear_btn.grid(row=0, column=2)
+
+        # Pipeline & Tools
+        tools_frame = ttk.LabelFrame(main_frame, text="Pipeline & Tools", padding="10")
+        tools_frame.grid(row=3, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
+
+        # DB path
+        ttk.Label(tools_frame, text="DB Path:").grid(row=0, column=0, sticky=tk.W)
+        self.db_var = tk.StringVar(value=self.db_path)
+        ttk.Entry(tools_frame, textvariable=self.db_var, width=50).grid(row=0, column=1, padx=(5,5))
+        ttk.Button(tools_frame, text="Browse DB...", command=self.browse_db).grid(row=0, column=2)
+
+        # Discovery options
+        self.discovery_after_var = tk.BooleanVar(value=False)
+        ttk.Checkbutton(tools_frame, text="Run discovery after scrape", variable=self.discovery_after_var).grid(row=1, column=0, sticky=tk.W, pady=(8,0))
+        ttk.Label(tools_frame, text="Discover limit:").grid(row=1, column=1, sticky=tk.E, pady=(8,0))
+        self.discover_limit_var = tk.IntVar(value=100)
+        ttk.Entry(tools_frame, textvariable=self.discover_limit_var, width=8).grid(row=1, column=2, sticky=tk.W, pady=(8,0))
+        ttk.Label(tools_frame, text="Hops:").grid(row=1, column=3, sticky=tk.E, pady=(8,0))
+        self.discover_hops_var = tk.IntVar(value=1)
+        ttk.Entry(tools_frame, textvariable=self.discover_hops_var, width=6).grid(row=1, column=4, sticky=tk.W, pady=(8,0))
+        ttk.Label(tools_frame, text="Seed level:").grid(row=1, column=5, sticky=tk.E, pady=(8,0))
+        self.seed_level_var = tk.StringVar(value="federal")
+        ttk.Combobox(tools_frame, textvariable=self.seed_level_var, values=["federal","state","county","city","local"], width=10).grid(row=1, column=6, sticky=tk.W, pady=(8,0))
+
+        # Crawl options
+        ttk.Label(tools_frame, text="Crawl level:").grid(row=2, column=0, sticky=tk.W)
+        self.crawl_level_var = tk.StringVar(value="state")
+        ttk.Combobox(tools_frame, textvariable=self.crawl_level_var, values=["federal","state","county","city","local"], width=10).grid(row=2, column=1, sticky=tk.W)
+        ttk.Label(tools_frame, text="Limit:").grid(row=2, column=2, sticky=tk.E)
+        self.crawl_limit_var = tk.IntVar(value=50)
+        ttk.Entry(tools_frame, textvariable=self.crawl_limit_var, width=8).grid(row=2, column=3, sticky=tk.W)
+        ttk.Label(tools_frame, text="Delay (s):").grid(row=2, column=4, sticky=tk.E)
+        self.crawl_delay_var = tk.DoubleVar(value=1.0)
+        ttk.Entry(tools_frame, textvariable=self.crawl_delay_var, width=8).grid(row=2, column=5, sticky=tk.W)
+
+        # Tool buttons
+        ttk.Button(tools_frame, text="Run Pipeline", command=self.run_pipeline_btn).grid(row=3, column=0, pady=(10,0), sticky=tk.W)
+        ttk.Button(tools_frame, text="Run Discovery", command=self.run_discovery_btn).grid(row=3, column=1, pady=(10,0), sticky=tk.W)
+        ttk.Button(tools_frame, text="Crawl Contacts", command=self.run_crawl_btn).grid(row=3, column=2, pady=(10,0), sticky=tk.W)
+        ttk.Button(tools_frame, text="Schedule Batch", command=self.run_schedule_btn).grid(row=3, column=3, pady=(10,0), sticky=tk.W)
+        ttk.Button(tools_frame, text="Start API", command=self.start_api).grid(row=3, column=5, pady=(10,0), sticky=tk.E)
+        ttk.Button(tools_frame, text="Stop API", command=self.stop_api).grid(row=3, column=6, pady=(10,0), sticky=tk.W)
         
         # Progress section
         progress_frame = ttk.LabelFrame(main_frame, text="Progress", padding="10")
-        progress_frame.grid(row=3, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
+        progress_frame.grid(row=4, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
         
         # Progress bar
         self.progress_var = tk.DoubleVar()
@@ -107,7 +152,7 @@ class DesktopScraperApp:
         
         # Log section
         log_frame = ttk.LabelFrame(main_frame, text="Log Output", padding="10")
-        log_frame.grid(row=4, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
+        log_frame.grid(row=5, column=0, columnspan=3, sticky=(tk.W, tk.E, tk.N, tk.S), pady=(0, 10))
         
         # Log text area with scrollbar
         self.log_text = scrolledtext.ScrolledText(log_frame, height=15, width=80)
@@ -115,7 +160,7 @@ class DesktopScraperApp:
         
         # Results section
         results_frame = ttk.LabelFrame(main_frame, text="Results", padding="10")
-        results_frame.grid(row=5, column=0, columnspan=3, sticky=(tk.W, tk.E))
+        results_frame.grid(row=6, column=0, columnspan=3, sticky=(tk.W, tk.E))
         
         self.results_label = ttk.Label(results_frame, text="No results yet")
         self.results_label.grid(row=0, column=0, sticky=tk.W)
@@ -128,7 +173,7 @@ class DesktopScraperApp:
         self.root.columnconfigure(0, weight=1)
         self.root.rowconfigure(0, weight=1)
         main_frame.columnconfigure(0, weight=1)
-        main_frame.rowconfigure(4, weight=1)
+        main_frame.rowconfigure(5, weight=1)
         config_frame.columnconfigure(3, weight=1)
         progress_frame.columnconfigure(0, weight=1)
         log_frame.columnconfigure(0, weight=1)
@@ -178,6 +223,13 @@ class DesktopScraperApp:
         if directory:
             self.output_var.set(directory)
             self.output_dir = directory
+
+    def browse_db(self):
+        """Browse for DB file path."""
+        file = filedialog.asksaveasfilename(defaultextension=".db", initialfile=os.path.basename(self.db_var.get()) or "government_contacts.db")
+        if file:
+            self.db_var.set(file)
+            self.db_path = file
             
     def clear_log(self):
         """Clear the log text area."""
@@ -330,6 +382,89 @@ class DesktopScraperApp:
             # For non-Windows systems
             import subprocess
             subprocess.call(['xdg-open', self.output_dir])
+
+    # ---- Pipeline actions ----
+    def run_pipeline_btn(self):
+        def worker():
+            db = self.db_var.get()
+            cmd = ["python", "scripts/run_pipeline.py", "--db", db]
+            if self.discovery_after_var.get():
+                cmd += ["--discover", "--discover-limit", str(self.discover_limit_var.get())]
+            self.run_command(cmd)
+        threading.Thread(target=worker, daemon=True).start()
+
+    def run_discovery_btn(self):
+        def worker():
+            db = self.db_var.get()
+            cmd = [
+                "python", "scripts/discover_gov_sites.py", "--db", db,
+                "--from-level", self.seed_level_var.get(),
+                "--limit", str(self.discover_limit_var.get()),
+                "--hops", str(self.discover_hops_var.get())
+            ]
+            self.run_command(cmd)
+        threading.Thread(target=worker, daemon=True).start()
+
+    def run_crawl_btn(self):
+        def worker():
+            db = self.db_var.get()
+            cmd = [
+                "python", "scripts/crawl_contacts_from_db.py", "--db", db,
+                "--level", self.crawl_level_var.get(),
+                "--limit", str(self.crawl_limit_var.get()),
+                "--delay", str(self.crawl_delay_var.get())
+            ]
+            self.run_command(cmd)
+        threading.Thread(target=worker, daemon=True).start()
+
+    def run_schedule_btn(self):
+        def worker():
+            db = self.db_var.get()
+            cmd = [
+                "python", "scripts/schedule_crawl.py", "--db", db,
+                "--level", self.crawl_level_var.get(),
+                "--batch", str(self.crawl_limit_var.get()),
+                "--delay", str(self.crawl_delay_var.get())
+            ]
+            self.run_command(cmd)
+        threading.Thread(target=worker, daemon=True).start()
+
+    def start_api(self):
+        if self.api_process and self.api_process.poll() is None:
+            messagebox.showinfo("API", "API server already running.")
+            return
+        env = os.environ.copy()
+        env['GOV_CONTACTS_DB_PATH'] = self.db_var.get()
+        try:
+            self.api_process = subprocess.Popen(["python", "src/api/government_contacts_api.py"], env=env)
+            self.log_text.insert(tk.END, f"Started API at http://localhost:5000 (DB={env['GOV_CONTACTS_DB_PATH']})\n")
+            self.log_text.see(tk.END)
+        except Exception as e:
+            messagebox.showerror("API", f"Failed to start API: {e}")
+
+    def stop_api(self):
+        if self.api_process and self.api_process.poll() is None:
+            self.api_process.terminate()
+            self.api_process = None
+            self.log_text.insert(tk.END, "Stopped API server.\n")
+            self.log_text.see(tk.END)
+        else:
+            messagebox.showinfo("API", "API server is not running.")
+
+    def run_command(self, cmd):
+        try:
+            self.log_text.insert(tk.END, f"$ {' '.join(cmd)}\n")
+            self.log_text.see(tk.END)
+            proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            for line in proc.stdout:
+                self.log_text.insert(tk.END, line)
+                self.log_text.see(tk.END)
+            proc.wait()
+            self.log_text.insert(tk.END, f"[exit {proc.returncode}]\n")
+            self.log_text.see(tk.END)
+        except Exception as e:
+            self.log_text.insert(tk.END, f"Command failed: {e}\n")
+            self.log_text.see(tk.END)
 
 
 def main():
