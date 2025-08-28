@@ -95,43 +95,70 @@ class DesktopScraperApp:
         tools_frame = ttk.LabelFrame(main_frame, text="Pipeline & Tools", padding="10")
         tools_frame.grid(row=3, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(0, 10))
 
+        # Plain‑language explanation
+        ttk.Label(tools_frame, text=(
+            "This page helps you: 1) collect the official agency list,"
+            " 2) find more government websites, 3) pull contacts (emails/phones),"
+            " and 4) start/stop a small local website (API) to access your data."
+        ), wraplength=700, foreground="#444").grid(row=0, column=0, columnspan=7, sticky=tk.W, pady=(0,8))
+
         # DB path
-        ttk.Label(tools_frame, text="DB Path:").grid(row=0, column=0, sticky=tk.W)
+        ttk.Label(tools_frame, text="Where to save the database (file):").grid(row=1, column=0, sticky=tk.W)
         self.db_var = tk.StringVar(value=self.db_path)
-        ttk.Entry(tools_frame, textvariable=self.db_var, width=50).grid(row=0, column=1, padx=(5,5))
-        ttk.Button(tools_frame, text="Browse DB...", command=self.browse_db).grid(row=0, column=2)
+        db_entry = ttk.Entry(tools_frame, textvariable=self.db_var, width=50)
+        db_entry.grid(row=1, column=1, padx=(5,5))
+        db_btn = ttk.Button(tools_frame, text="Browse DB...", command=self.browse_db)
+        db_btn.grid(row=1, column=2)
 
         # Discovery options
         self.discovery_after_var = tk.BooleanVar(value=False)
-        ttk.Checkbutton(tools_frame, text="Run discovery after scrape", variable=self.discovery_after_var).grid(row=1, column=0, sticky=tk.W, pady=(8,0))
-        ttk.Label(tools_frame, text="Discover limit:").grid(row=1, column=1, sticky=tk.E, pady=(8,0))
+        disc_after = ttk.Checkbutton(tools_frame, text="After scraping, also look for more government websites", variable=self.discovery_after_var)
+        disc_after.grid(row=2, column=0, columnspan=3, sticky=tk.W, pady=(8,0))
+        ttk.Label(tools_frame, text="How many pages to look at (limit):").grid(row=3, column=0, sticky=tk.W)
         self.discover_limit_var = tk.IntVar(value=100)
-        ttk.Entry(tools_frame, textvariable=self.discover_limit_var, width=8).grid(row=1, column=2, sticky=tk.W, pady=(8,0))
-        ttk.Label(tools_frame, text="Hops:").grid(row=1, column=3, sticky=tk.E, pady=(8,0))
+        ttk.Entry(tools_frame, textvariable=self.discover_limit_var, width=8).grid(row=3, column=1, sticky=tk.W)
+        ttk.Label(tools_frame, text="Rounds of link‑following (hops):").grid(row=3, column=2, sticky=tk.E)
         self.discover_hops_var = tk.IntVar(value=1)
-        ttk.Entry(tools_frame, textvariable=self.discover_hops_var, width=6).grid(row=1, column=4, sticky=tk.W, pady=(8,0))
-        ttk.Label(tools_frame, text="Seed level:").grid(row=1, column=5, sticky=tk.E, pady=(8,0))
+        ttk.Entry(tools_frame, textvariable=self.discover_hops_var, width=6).grid(row=3, column=3, sticky=tk.W)
+        ttk.Label(tools_frame, text="Start from which group:").grid(row=3, column=4, sticky=tk.E)
         self.seed_level_var = tk.StringVar(value="federal")
-        ttk.Combobox(tools_frame, textvariable=self.seed_level_var, values=["federal","state","county","city","local"], width=10).grid(row=1, column=6, sticky=tk.W, pady=(8,0))
+        ttk.Combobox(tools_frame, textvariable=self.seed_level_var, values=["federal","state","county","city","local"], width=12).grid(row=3, column=5, sticky=tk.W)
 
         # Crawl options
-        ttk.Label(tools_frame, text="Crawl level:").grid(row=2, column=0, sticky=tk.W)
+        ttk.Label(tools_frame, text="Find contacts (emails/phones) on these sites:").grid(row=4, column=0, sticky=tk.W, pady=(8,0))
         self.crawl_level_var = tk.StringVar(value="state")
-        ttk.Combobox(tools_frame, textvariable=self.crawl_level_var, values=["federal","state","county","city","local"], width=10).grid(row=2, column=1, sticky=tk.W)
-        ttk.Label(tools_frame, text="Limit:").grid(row=2, column=2, sticky=tk.E)
+        ttk.Combobox(tools_frame, textvariable=self.crawl_level_var, values=["federal","state","county","city","local"], width=10).grid(row=4, column=1, sticky=tk.W)
+        ttk.Label(tools_frame, text="How many sites this run:").grid(row=4, column=2, sticky=tk.E)
         self.crawl_limit_var = tk.IntVar(value=50)
-        ttk.Entry(tools_frame, textvariable=self.crawl_limit_var, width=8).grid(row=2, column=3, sticky=tk.W)
-        ttk.Label(tools_frame, text="Delay (s):").grid(row=2, column=4, sticky=tk.E)
+        ttk.Entry(tools_frame, textvariable=self.crawl_limit_var, width=8).grid(row=4, column=3, sticky=tk.W)
+        ttk.Label(tools_frame, text="Pause between sites (seconds):").grid(row=4, column=4, sticky=tk.E)
         self.crawl_delay_var = tk.DoubleVar(value=1.0)
-        ttk.Entry(tools_frame, textvariable=self.crawl_delay_var, width=8).grid(row=2, column=5, sticky=tk.W)
+        ttk.Entry(tools_frame, textvariable=self.crawl_delay_var, width=8).grid(row=4, column=5, sticky=tk.W)
 
         # Tool buttons
-        ttk.Button(tools_frame, text="Run Pipeline", command=self.run_pipeline_btn).grid(row=3, column=0, pady=(10,0), sticky=tk.W)
-        ttk.Button(tools_frame, text="Run Discovery", command=self.run_discovery_btn).grid(row=3, column=1, pady=(10,0), sticky=tk.W)
-        ttk.Button(tools_frame, text="Crawl Contacts", command=self.run_crawl_btn).grid(row=3, column=2, pady=(10,0), sticky=tk.W)
-        ttk.Button(tools_frame, text="Schedule Batch", command=self.run_schedule_btn).grid(row=3, column=3, pady=(10,0), sticky=tk.W)
-        ttk.Button(tools_frame, text="Start API", command=self.start_api).grid(row=3, column=5, pady=(10,0), sticky=tk.E)
-        ttk.Button(tools_frame, text="Stop API", command=self.stop_api).grid(row=3, column=6, pady=(10,0), sticky=tk.W)
+        btn_pipeline = ttk.Button(tools_frame, text="Scrape and build the database", command=self.run_pipeline_btn)
+        btn_pipeline.grid(row=5, column=0, pady=(10,0), sticky=tk.W)
+        btn_discovery = ttk.Button(tools_frame, text="Find more government websites", command=self.run_discovery_btn)
+        btn_discovery.grid(row=5, column=1, pady=(10,0), sticky=tk.W)
+        btn_crawl = ttk.Button(tools_frame, text="Find contacts on selected sites", command=self.run_crawl_btn)
+        btn_crawl.grid(row=5, column=2, pady=(10,0), sticky=tk.W)
+        btn_schedule = ttk.Button(tools_frame, text="Process next batch (later refresh)", command=self.run_schedule_btn)
+        btn_schedule.grid(row=5, column=3, pady=(10,0), sticky=tk.W)
+        btn_api_start = ttk.Button(tools_frame, text="Start data website (API)", command=self.start_api)
+        btn_api_start.grid(row=5, column=5, pady=(10,0), sticky=tk.E)
+        btn_api_stop = ttk.Button(tools_frame, text="Stop data website", command=self.stop_api)
+        btn_api_stop.grid(row=5, column=6, pady=(10,0), sticky=tk.W)
+
+        # Attach simple tooltips (hover text)
+        self._attach_tooltip(db_entry, "Choose where your data is saved. This is a single file database.")
+        self._attach_tooltip(db_btn, "Pick a new place or name for the database file.")
+        self._attach_tooltip(disc_after, "After scraping the official list, also scan those pages for links to more .gov/.us sites.")
+        self._attach_tooltip(btn_pipeline, "Do everything for you: collect the agency list, clean it, make or update the database.")
+        self._attach_tooltip(btn_discovery, "Look at the saved websites and add newly found .gov/.us sites to your database.")
+        self._attach_tooltip(btn_crawl, "Visit the saved websites and try to collect emails and phone numbers from contact pages.")
+        self._attach_tooltip(btn_schedule, "Process a small set now and more later. Useful for regular, gentle refreshes.")
+        self._attach_tooltip(btn_api_start, "Start a small local website so other tools can read your data at http://localhost:5000")
+        self._attach_tooltip(btn_api_stop, "Turn off the local website (API).")
         
         # Progress section
         progress_frame = ttk.LabelFrame(main_frame, text="Progress", padding="10")
@@ -179,6 +206,14 @@ class DesktopScraperApp:
         log_frame.columnconfigure(0, weight=1)
         log_frame.rowconfigure(0, weight=1)
         results_frame.columnconfigure(0, weight=1)
+
+    # Simple tooltip helper
+    def _attach_tooltip(self, widget, text: str):
+        tip = Tooltip(self.root, text)
+        def on_enter(_): tip.show(widget)
+        def on_leave(_): tip.hide()
+        widget.bind('<Enter>', on_enter)
+        widget.bind('<Leave>', on_leave)
         
     def setup_logging(self):
         """Set up logging to capture scraper output."""
@@ -493,3 +528,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Lightweight tooltip implementation
+class Tooltip:
+    def __init__(self, root, text: str):
+        self.root = root
+        self.text = text
+        self.tw = None
+
+    def show(self, widget):
+        if self.tw is not None:
+            return
+        x = widget.winfo_rootx() + 20
+        y = widget.winfo_rooty() + widget.winfo_height() + 5
+        self.tw = tk.Toplevel(widget)
+        self.tw.overrideredirect(True)
+        self.tw.attributes("-topmost", True)
+        label = tk.Label(self.tw, text=self.text, justify=tk.LEFT,
+                         background="#ffffe0", relief=tk.SOLID, borderwidth=1,
+                         wraplength=360)
+        label.pack(ipadx=6, ipy=4)
+        self.tw.geometry(f"+{x}+{y}")
+
+    def hide(self):
+        if self.tw is not None:
+            self.tw.destroy()
+            self.tw = None
