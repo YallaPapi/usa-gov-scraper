@@ -43,6 +43,8 @@ def run_load(db_path: Path, cleaned_dir: Path):
 def main():
     parser = argparse.ArgumentParser(description="Run the simple end-to-end pipeline")
     parser.add_argument("--db", default="government_contacts.db", help="Path to SQLite DB")
+    parser.add_argument("--discover", action="store_true", help="Run a single-hop .gov/.us discovery from agencies")
+    parser.add_argument("--discover-limit", type=int, default=100, help="Max seed pages to fetch for discovery")
     args = parser.parse_args()
 
     root = Path.cwd()
@@ -66,6 +68,15 @@ def main():
     print("[4/4] Loading agencies into database...")
     run_load(db_path, clean_dir)
 
+    if args.discover:
+        print("[Optional] Discovering additional .gov/.us sites from agencies…")
+        subprocess.check_call([
+            "python", "scripts/discover_gov_sites.py",
+            "--db", str(db_path),
+            "--agencies-csv", str(clean_dir / "usa_gov_agencies_*.csv"),
+            "--limit", str(args.discover_limit)
+        ])
+
     print("✅ Pipeline completed.")
     print(f"   DB: {db_path}")
     print("   Set GOV_CONTACTS_DB_PATH to this path and start the API:")
@@ -74,4 +85,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
