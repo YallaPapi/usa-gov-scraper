@@ -9,7 +9,33 @@ import logging
 import sys
 import os
 from datetime import datetime
-from scraper.botasaurus_core import GovernmentAgencyScraper
+
+# Lazy/guarded imports for optional components
+def get_scraper_class():
+    """Return the best available GovernmentAgencyScraper implementation.
+
+    Prefers Botasaurus-backed scraper if available; falls back to requests-based core.
+    """
+    try:
+        from scraper.botasaurus_core import GovernmentAgencyScraper as BotScraper  # type: ignore
+        return BotScraper
+    except Exception:
+        from scraper.core import GovernmentAgencyScraper as CoreScraper  # type: ignore
+        return CoreScraper
+
+def get_orchestrator():
+    """Return an orchestrator instance if available, else None."""
+    try:
+        # Prefer a clearly named orchestrator class if present
+        try:
+            from orchestrator import AgencyIndexOrchestratorSystem  # type: ignore
+            return AgencyIndexOrchestratorSystem()
+        except Exception:
+            # Fallback to any legacy name if it exists
+            from orchestrator import GovernmentScraperOrchestrator  # type: ignore
+            return GovernmentScraperOrchestrator()
+    except Exception:
+        return None
 
 
 def setup_logging(log_level: str = "INFO", quiet: bool = False) -> logging.Logger:
@@ -46,18 +72,19 @@ def setup_logging(log_level: str = "INFO", quiet: bool = False) -> logging.Logge
 def run_simple_scrape(args: argparse.Namespace, logger: logging.Logger) -> int:
     """Run simple scrape without orchestration."""
     logger.info("Starting simple government agency scrape")
-    
+
     try:
-        scraper = GovernmentAgencyScraper(
+        ScraperCls = get_scraper_class()
+        scraper = ScraperCls(
             rate_limit=0.5,
             max_retries=3
         )
-        
+
         if args.section:
             # Scrape specific section
             logger.info(f"Scraping section: {args.section}")
             result = scraper.scrape_section(args.section.upper())
-            
+
             if result['success']:
                 agencies = result['agencies']
             else:
@@ -67,7 +94,7 @@ def run_simple_scrape(args: argparse.Namespace, logger: logging.Logger) -> int:
             # Scrape all sections
             logger.info("Scraping all sections A-Z")
             result = scraper.scrape_all_sections()
-            
+
             if result['success']:
                 agencies = result['agencies']
                 if args.verbose:
@@ -77,23 +104,23 @@ def run_simple_scrape(args: argparse.Namespace, logger: logging.Logger) -> int:
             else:
                 logger.error("Failed to scrape agencies")
                 return 1
-        
+
         # Validate data
         validation = scraper.validate_data(agencies)
         logger.info(f"Validation: {validation['valid_agencies']}/{validation['total_agencies']} valid agencies")
-        
+
         if not validation['validation_passed']:
             logger.warning(f"Found {len(validation['issues'])} validation issues")
             if args.verbose:
                 for issue in validation['issues'][:5]:
                     logger.warning(f"  - {issue}")
-        
+
         # Export data
         export_paths = scraper.export_data(agencies)
         logger.info(f"Data exported to:")
         logger.info(f"  CSV: {export_paths['csv']}")
         logger.info(f"  JSON: {export_paths['json']}")
-        
+
         # Save statistics if requested
         if args.save_stats:
             stats_file = f"logs/stats_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
@@ -101,11 +128,67 @@ def run_simple_scrape(args: argparse.Namespace, logger: logging.Logger) -> int:
             with open(stats_file, 'w') as f:
                 json.dump(result.get('statistics', {}), f, indent=2, default=str)
             logger.info(f"Statistics saved to: {stats_file}")
-        
+
         return 0
-        
+
     except Exception as e:
         logger.error(f"Unexpected error: {str(e)}", exc_info=True)
+        return 1
+
+
+def run_orchestrated_scrape(args: argparse.Namespace, logger: logging.Logger) -> int:
+    """Run full orchestrated scrape with advanced features."""
+    logger.info("Starting orchestrated government agency scrape")
+
+    try:
+        orchestrator = get_orchestrator()
+        if orchestrator is None:
+            logger.warning("Orchestrated mode is unavailable (missing dependencies or invalid orchestrator). Falling back to simple mode.")
+            return run_simple_scrape(args, logger)
+
+        # Configure orchestrator based on arguments
+        if args.section:
+            orchestrator.configure_sections([args.section.upper()])
+            logger.info(f"Orchestrating section: {args.section}")
+        else:
+            logger.info("Orchestrating all sections A-Z")
+
+        # Run orchestrated scrape
+        result = orchestrator.run_orchestrated_scrape()
+
+        if result['success']:
+            agencies = result['agencies']
+            stats = result['statistics']
+
+            logger.info("Orchestrated scraping completed successfully!")
+            logger.info(f"Found {len(agencies)} agencies across {stats['sections_scraped']} sections")
+            logger.info(f"Duration: {stats['duration_seconds']:.2f} seconds")
+            logger.info(f"Dynamic agents created: {stats['dynamic_agents_created']}")
+
+            if args.verbose:
+                logger.info(f"Validation: {stats['validation_results']['valid_agencies']}/{stats['validation_results']['total_agencies']} valid agencies")
+
+            # Export results are handled by orchestrator
+            export_paths = result['export_paths']
+            logger.info("Data exported to:")
+            for fmt, path in export_paths.items():
+                logger.info(f"  {fmt.upper()}: {path}")
+
+            # Save orchestration report if requested
+            if args.save_stats:
+                report_file = f"logs/orchestration_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+                with open(report_file, 'w') as f:
+                    f.write(orchestrator.get_orchestration_report())
+                logger.info(f"Orchestration report saved to: {report_file}")
+
+            return 0
+        else:
+            logger.error("Orchestrated scraping failed")
+            logger.error(f"Errors: {result.get('errors', [])}")
+            return 1
+
+    except Exception as e:
+        logger.error(f"Unexpected error in orchestrated mode: {str(e)}", exc_info=True)
         return 1
 
 
@@ -116,14 +199,17 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Simple scrape of all agencies
-  python main.py --simple
-  
-  # Scrape specific section with verbose output
-  python main.py --simple --section A --verbose
-  
-  # Quiet mode with statistics
-  python main.py --simple --quiet --save-stats
+   # Full orchestrated scrape (recommended)
+   python main.py --orchestrated
+
+   # Simple scrape without orchestration
+   python main.py --simple
+
+   # Orchestrated scrape of specific section
+   python main.py --orchestrated --section A --verbose
+
+   # Quiet mode with statistics
+   python main.py --quiet --save-stats
         """
     )
     
@@ -131,7 +217,13 @@ Examples:
     parser.add_argument(
         '--simple',
         action='store_true',
-        help='Run simple scrape without orchestration (recommended)'
+        help='Run simple scrape without orchestration'
+    )
+
+    parser.add_argument(
+        '--orchestrated',
+        action='store_true',
+        help='Run full orchestrated scrape with advanced features (recommended)'
     )
     
     # Scraping options
@@ -173,9 +265,10 @@ Examples:
     # Validate arguments
     if args.section and (len(args.section) != 1 or not args.section.isalpha()):
         parser.error("Section must be a single letter (A-Z)")
-    
-    if not args.simple:
-        parser.error("Currently only --simple mode is supported. Full orchestration mode coming soon.")
+
+    # Default to simple mode if no mode specified (orchestrated optional)
+    if not args.simple and not args.orchestrated:
+        args.simple = True
     
     # Set up logging
     logger = setup_logging(args.log_level, args.quiet)
@@ -188,14 +281,20 @@ Examples:
     
     # Run scraper
     try:
-        exit_code = run_simple_scrape(args, logger)
-        
+        if args.simple:
+            exit_code = run_simple_scrape(args, logger)
+        elif args.orchestrated:
+            exit_code = run_orchestrated_scrape(args, logger)
+        else:
+            # Default to orchestrated mode
+            exit_code = run_orchestrated_scrape(args, logger)
+
         if not args.quiet:
             if exit_code == 0:
                 print("\n✓ Scraping completed successfully!")
             else:
                 print("\n✗ Scraping failed. Check logs for details.")
-        
+
         return exit_code
         
     except KeyboardInterrupt:

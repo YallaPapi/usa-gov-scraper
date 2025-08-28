@@ -1,0 +1,30 @@
+# Government Contacts Export & API Requirements
+# Core dependencies for export utilities and REST API
+
+# Export functionality
+pandas>=1.5.0
+openpyxl>=3.0.0
+vobject>=0.9.6.1
+
+# API framework
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+Flask-Limiter>=3.0.0
+Flask-Caching>=2.0.0
+
+# Data visualization (for dashboard)
+streamlit>=1.28.0
+plotly>=5.15.0
+
+# (Built-in modules like sqlite3, pathlib, logging, etc. are not listed here)
+
+# Optional dependencies for enhanced functionality
+requests>=2.31.0  # For external API calls
+python-dotenv>=1.0.0  # For environment variables
+gunicorn>=21.0.0  # For production deployment
+
+# Development dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+flake8>=6.0.0

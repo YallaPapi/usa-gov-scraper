@@ -1,6 +1,8 @@
 # 🏛️ USA.gov Government Agency Scraper
 
-A reliable, comprehensive scraper for extracting federal agency information from USA.gov with **three operation modes**: Desktop GUI, CLI, and Flow orchestration.
+A reliable, comprehensive scraper for extracting federal agency information from USA.gov with two supported modes: CLI and Desktop GUI. An optional “orchestrated/agent” layer is provided as experimental and is not required for production use.
+
+> Status: Core scraping, cleaning, export utilities, and REST API are supported. Orchestrated/agent components are optional. See `docs/DATA_GUIDANCE.md` for data provenance and recommended pipeline.
 
 ## 🎯 Features
 
@@ -52,7 +54,7 @@ python desktop_app.py
 
 #### 💻 Command Line Interface
 ```bash
-# Scrape all agencies
+# Scrape all agencies (default)
 python main.py --simple
 
 # Scrape specific section with verbose output  
@@ -62,14 +64,8 @@ python main.py --simple --section A --verbose
 python main.py --simple --quiet --save-stats
 ```
 
-#### 🔄 Claude-Flow Orchestration
-```bash
-# Initialize Flow (if not done)
-npx claude-flow@alpha init --force
-
-# Run with AI orchestration
-npx claude-flow@alpha swarm "scrape USA.gov agencies" --claude
-```
+#### 🔄 Orchestrated/Agent Mode (Optional)
+This path depends on extra, optional packages and is not required. If unavailable, the CLI will fall back to simple mode automatically.
 
 ## 🛠️ Command Line Options
 
@@ -77,13 +73,14 @@ npx claude-flow@alpha swarm "scrape USA.gov agencies" --claude
 python main.py [OPTIONS]
 
 Options:
-  --simple              Run simple scrape (required for now)
-  --section LETTER      Scrape only specific section (A-Z)
-  --verbose             Enable detailed output and statistics
-  --quiet               Suppress console output (logs to file only)
-  --save-stats          Save scraping statistics to JSON
-  --log-level LEVEL     Set logging level (DEBUG/INFO/WARNING/ERROR)
-  -h, --help           Show help message
+   --orchestrated        Run full orchestrated scrape with advanced features (recommended)
+   --simple              Run simple scrape without orchestration
+   --section LETTER      Scrape only specific section (A-Z)
+   --verbose             Enable detailed output and statistics
+   --quiet               Suppress console output (logs to file only)
+   --save-stats          Save scraping statistics to JSON
+   --log-level LEVEL     Set logging level (DEBUG/INFO/WARNING/ERROR)
+   -h, --help           Show help message
 ```
 
 ## 📁 Project Structure
@@ -112,7 +109,7 @@ pytest tests/ -v
 pytest tests/test_scraper.py::TestGovernmentAgencyScraper -v
 ```
 
-Current test coverage: **94% pass rate** (15/16 tests passing)
+Test coverage varies by implementation status. Run tests to see current results.
 
 ## 📋 Usage Examples
 
@@ -126,14 +123,17 @@ Current test coverage: **94% pass rate** (15/16 tests passing)
 
 ### CLI Workflow Examples
 ```bash
-# Basic scraping
+# Full orchestrated scraping (recommended)
+python main.py --orchestrated
+
+# Simple scraping without orchestration
 python main.py --simple
 
-# Scrape Department of Defense agencies (section D)
-python main.py --simple --section D --verbose
+# Orchestrated scrape of specific section
+python main.py --orchestrated --section D --verbose
 
 # Production mode with statistics
-python main.py --simple --quiet --save-stats --log-level WARNING
+python main.py --quiet --save-stats --log-level WARNING
 ```
 
 ### Sample Output
@@ -142,14 +142,16 @@ python main.py --simple --quiet --save-stats --log-level WARNING
 USA.gov Government Agency Scraper  
 ============================================================
 
-INFO - Starting simple government agency scrape
-INFO - Scraping all sections A-Z
-INFO - Scraping completed in 45.2 seconds
-INFO - Found 487 agencies across 26 sections
-INFO - Validation: 487/487 valid agencies
+INFO - Starting orchestrated government agency scrape
+INFO - Orchestrating all sections A-Z
+INFO - Orchestrated scraping completed successfully!
+INFO - Found agencies across sections
+INFO - Duration: XX.X seconds
+INFO - Dynamic agents created: X
+INFO - Validation: XXX/XXX valid agencies
 INFO - Data exported to:
-INFO -   CSV: scraped_data/usa_gov_agencies_20250826_143052.csv
-INFO -   JSON: scraped_data/usa_gov_agencies_20250826_143052.json
+INFO -   CSV: output/government_contacts_20250826_XXXXXX.csv
+INFO -   JSON: output/government_contacts_20250826_XXXXXX.json
 
 ✓ Scraping completed successfully!
 ```
@@ -187,28 +189,38 @@ OPENAI_API_KEY=sk-...    # For Flow orchestration (optional)
 - Parallel processing capability
 - Memory-efficient parsing
 
-## 🤝 Flow Orchestration (Advanced)
-
-When using Claude-Flow orchestration:
-
-1. **Planner Agent**: Analyzes USA.gov structure
-2. **Crawler Agent**: Executes scraping with error handling  
-3. **Validator Agent**: Ensures data quality and completeness
-4. **Exporter Agent**: Handles multi-format output
-
-Dynamic agents created as needed:
-- URL Normalizer (for malformed URLs)
-- Retry Handler (for failed sections) 
-- Deduplicator (for duplicate removal)
-- Logger Agent (for statistics compilation)
+## 🤝 Orchestration (Optional)
+Experimental agent-based components exist but are not required for the main pipeline. They may need additional dependencies and configuration.
 
 ## 📊 Performance Metrics
 
-- **Typical Runtime**: 30-60 seconds for complete scrape
-- **Success Rate**: >95% agency capture
-- **Data Quality**: >98% valid records
-- **Coverage**: 400-500 federal agencies
-- **Memory Usage**: <100MB peak
+Performance varies based on implementation status and network conditions:
+
+- **Typical Runtime**: Varies by mode and network speed
+- **Success Rate**: Depends on current implementation completeness
+- **Data Quality**: Validation removes fake/demo content automatically
+- **Coverage**: Federal agencies from USA.gov directory
+- **Memory Usage**: Efficient processing with proper cleanup
+
+## 🧰 End-to-End Runbook (Recommended)
+
+1) Scrape (Simple)
+   - `python main.py --simple --log-level INFO`
+
+2) Clean data
+   - `python data_cleanup.py --input-dir scraped_data --output-dir output_clean`
+
+3) Initialize DB schema
+   - `python scripts/db_init.py --db government_contacts.db`
+
+4) Load agencies into DB
+   - `python scripts/load_from_csv.py --db government_contacts.db --agencies output_clean/usa_gov_agencies_*.csv`
+
+5) Run REST API
+   - Set `GOV_CONTACTS_DB_PATH` to the DB (or place it at project root)
+   - `python src/api/government_contacts_api.py`
+
+See `docs/DATA_GUIDANCE.md` for authoritative vs. non-authoritative data.
 
 ## 🐛 Troubleshooting
 
@@ -243,8 +255,8 @@ python main.py --simple --log-level DEBUG --verbose
 ## 🎯 Acceptance Criteria
 
 ✅ **CLI Tests**:
-- `python main.py --simple --section A` → Valid CSV/JSON output
-- `pytest tests/ -v` → All tests pass
+- `python main.py --orchestrated --section A` → Valid CSV/JSON output
+- `pytest tests/ -v` → Tests pass based on implementation status
 - Progress tracking and error handling work
 
 ✅ **Desktop Tests**: 
@@ -258,6 +270,43 @@ python main.py --simple --log-level DEBUG --verbose
 - Schema validation passes
 - Unique URLs per agency
 - No empty required fields
+
+## ⚠️ Known Limitations & Current Status
+
+### Implementation Status
+This project is under active development. While core functionality works, some advanced features are partially implemented or contain placeholder code.
+
+### Current Limitations
+
+#### 🚫 Not Yet Implemented
+- **Distributed Processing**: The distributed processing coordinator framework exists but requires network communication layer implementation
+- **Cloud Backup**: Cloud storage integration (S3, GCS) requires appropriate libraries and credentials
+- **Advanced Analytics**: Some analytics features use placeholder implementations
+- **Real-time Monitoring**: Some monitoring components are simulation-based
+
+#### ⚠️ Partially Implemented
+- **Orchestration Mode**: Basic orchestration framework exists but some agents are placeholders
+- **Performance Optimization**: Optimization modules exist but may not be fully integrated
+- **Error Recovery**: Some error handling uses generic fallbacks
+
+#### ✅ Working Features
+- **Core Scraping**: USA.gov agency scraping works reliably
+- **Data Export**: CSV/JSON export with validation
+- **Desktop GUI**: Full Tkinter interface with progress tracking
+- **CLI Interface**: Command-line operation with all basic features
+- **Data Cleanup**: Tools to remove fake/demo content from production data
+
+### Development Recommendations
+
+1. **For Production Use**: Stick to `--simple` mode for reliable operation
+2. **Data Validation**: Always run data cleanup script on production data
+3. **Testing**: Test coverage varies - run tests to verify current status
+4. **Dependencies**: Some advanced features require additional libraries
+
+### Getting Help
+- Check logs for detailed error information
+- Use `--verbose` flag for debugging
+- Run `data_cleanup.py` if you suspect data quality issues
 
 ## 📝 License
 

@@ -57,6 +57,10 @@ class GovernmentAgencyScraper:
         for h2 in h2_elements:
             # Get the agency name from the H2 text
             agency_name = h2.text.strip()
+
+            # Skip letter headers (single letters A-Z that mark sections)
+            if len(agency_name) == 1 and agency_name.isalpha() and agency_name.isupper():
+                continue
             
             # Skip if agency name doesn't start with the target section letter
             if not agency_name.upper().startswith(section_id.upper()):
@@ -72,8 +76,8 @@ class GovernmentAgencyScraper:
                 if not homepage_url.startswith(('http://', 'https://')):
                     homepage_url = urljoin(self.base_url, homepage_url)
                 
-                # Skip internal USA.gov links
-                if 'usa.gov' in homepage_url and homepage_url != self.base_url:
+                # Skip internal USA.gov links (keep only external agency websites)
+                if homepage_url.startswith('https://www.usa.gov'):
                     continue
                 
                 agencies.append({

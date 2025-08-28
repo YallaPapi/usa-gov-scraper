@@ -11,8 +11,8 @@ import time
 from datetime import datetime
 from typing import List, Dict, Any
 import logging
-from email_scraper import GovernmentEmailScraper
-from local_gov_crawler import LocalGovernmentCrawler
+from scrapers.email_scraper import GovernmentEmailScraper
+from scrapers.local_gov_crawler import LocalGovernmentCrawler
 
 class ComprehensiveGovernmentScraper:
     """Master scraper that coordinates federal and local government contact extraction."""

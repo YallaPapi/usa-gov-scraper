@@ -11,7 +11,13 @@ import queue
 import os
 import json
 from datetime import datetime
-from scraper.botasaurus_core import GovernmentAgencyScraper
+# Prefer Botasaurus scraper if available; fallback to requests-based core
+try:
+    from scraper.botasaurus_core import GovernmentAgencyScraper  # type: ignore
+    _SCRAPER_IMPL = "botasaurus"
+except Exception:
+    from scraper.core import GovernmentAgencyScraper  # type: ignore
+    _SCRAPER_IMPL = "core"
 import logging
 
 

@@ -1,0 +1,44 @@
+# Requirements for Aggressive Government Website Discovery System
+# Install with: pip install -r requirements_aggressive_discovery.txt
+
+# Core HTTP and async libraries
+aiohttp>=3.8.0
+asyncio-throttle>=1.0.2
+
+# DNS and network analysis
+dnspython>=2.2.0
+python-whois>=0.8.0
+
+# Web scraping and parsing
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+requests>=2.28.0
+urllib3>=1.26.0
+
+# SSL certificate handling
+pyOpenSSL>=22.0.0
+cryptography>=3.4.0
+
+# Data processing and storage
+pandas>=1.4.0
+# (Built-ins like sqlite3/csv/json are not listed here)
+
+# Logging and utilities
+tqdm>=4.64.0
+colorlog>=6.7.0
+
+# Regular expressions (built-in)
+# (re is built-in)
+
+# Date and time handling (built-in)
+# (datetime, time are built-in)
+
+# Path handling (built-in)
+# (pathlib is built-in)
+
+# Data structures
+# (dataclasses, typing are built-in)
+
+# Optional: Enhanced performance
+uvloop>=0.17.0  # For Linux/macOS
+aiodns>=3.0.0   # For faster DNS resolution
